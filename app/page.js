@@ -27,7 +27,7 @@ export default function Home() {
     <motion.div className="app" animate={controls}>
       <Navbar/>
       <Hero/>
-      <BrandingVideo/> 
+      {/* <BrandingVideo/>  */}
       <WhatWeDo/> {/* Service */}
 
       {/* MODIFICAR cambio de color entre secciones, a rojo? */}
