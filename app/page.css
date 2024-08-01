@@ -3,6 +3,7 @@
 .container {
     width: 100%; /* Asegúrate de que ocupe todo el ancho */
     max-width: 100%; /* Elimina cualquier ancho máximo si está presente */
+
 }
 
 .app{

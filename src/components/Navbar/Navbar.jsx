@@ -35,7 +35,7 @@ const Navbar = () => {
                 {/*Dos secciones para el navbat*/}
                 {/*Left side */}
                 <div className="n-logo">
-                <img src="NavBar/optimum-stucco-services-logo.svg" alt="LOGO"  />
+                <img src="NavBar/optimum-stucco-services-logo-2.svg" alt="LOGO"  />
                 </div>
 
                 {/*Right side*/}
@@ -76,7 +76,7 @@ const Navbar = () => {
         <div className="nm-container">
             {/*Logo*/}
             <div className="nm-logo">
-              <img  src="NavBar/optimum-stucco-services-logo.svg" alt="LOGO1"  />
+              <img  src="NavBar/optimum-stucco-services-logo-2.svg" alt="LOGO1"  />
             </div>
            
 

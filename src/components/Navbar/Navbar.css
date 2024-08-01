@@ -2,7 +2,6 @@
 /*MODIFICAR COLOR DE MORADO A blanco del Navbar------------*/
 
 
-
 .n-wrapper{
     background-color: white;/* var(--primary-color); */ /*Color predefinidio en global.css*/
     width: 100%;
@@ -12,10 +11,13 @@
     margin: 0; /* Elimina cualquier margen externo por defecto */
     
     
-    top: 0; /* Asegura que no haya espacio extra en la parte superior */
+    padding: 0; /* Elimina cualquier relleno por defecto */
+    top: 0; /* Alineado al top */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidad */
     
 
 }
+
 
 /* Sticky menu - menú móvil */
 .sticky{
@@ -26,11 +28,33 @@
     box-shadow: 10px 12px 48px rgba(0, 0, 0, 0.306);
     background: white;
 
+    padding: 0;
+    margin: 0;
+
 }
 /* Regla específica para el estado sticky */
+.sticky .n-logo{
+    font-weight: bold;
+    cursor: pointer;
+
+    height: 5rem; /* Altura del contenedor del logo */
+    width: auto; /* Ancho se ajusta automáticamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
+}
 .sticky .n-logo img {
-    height: 150px; /* Tamaño reducido del logo en estado sticky */
+    height: auto; /* Ajusta esto según la altura deseada */
+    
     width: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer;
+}
+.sticky .n-menu{
+    color: rgb(0, 0, 0);
+    
 }
 /* Reducir el tamaño del texto en estado sticky */
 .sticky .n-menu span {
@@ -45,7 +69,7 @@
 
 
 .n-container{
-    padding: 0.01rem 1rem;
+    padding: 0rem 5rem 0rem 5rem;
     color: black;/* white; */
     font-size: 1rem;
     display: flex;
@@ -53,14 +77,15 @@
     justify-content: space-between;
     font-weight: 500;
 
+    
 }
 
 /* Continuación sticky menu */
 .sticky .n-container{
     color: var(--title-color);
-    padding: 1rem;
+    
 
-    padding: 0.01rem 1rem; /* Ajustar el padding */
+    padding: 0.01rem 3rem; /* Ajustar el padding */
 
 }
 
@@ -73,11 +98,23 @@
     font-weight: bold;
     cursor: pointer;
 
+    height: 5rem; /* Altura del contenedor del logo */
+    width: auto; /* Ancho se ajusta automáticamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
 }
 .n-logo img {
-    height: 100px; /* Ajusta esto según la altura deseada */
+    height: auto; /* Ajusta esto según la altura deseada */
+    
     width: auto; /* Mantiene la proporción de la imagen */
     cursor: pointer;
+    
+    /* padding: 3rem 0rem 0rem 0rem; */
+    
 }
 
 
@@ -116,7 +153,11 @@
 .fund-button{
     color: rgb(0, 0, 0);/* var(--dark-bg); */
     background-color:  #E62200; /* var(--third-color); */
-    padding: 1rem 1.6rem;
+    padding: 0.8rem 1rem;
+    margin: 0;
+    
+
+    
     font-size: 1rem;
     text-transform: capitalize;
     border-radius: 999px;
@@ -148,25 +189,120 @@
 
 /* Responsive Design */
 
-@media only screen and (min-width: 1201px) {
-    .n-container {
-        justify-content: space-between; /* Ajustamos la distribución de espacio */
-        padding: 1rem 2rem; /* Mayor padding para más espacio */
+
+
+
+
+/* Versión Móvil */
+@media only screen and (max-width: 600px) {
+    .n-container{
+        display: none;
     }
-    
-    
-    .n-logo img {
-        height: 150px; /* Ajusta esto según la altura deseada */
-        width: auto; /* Mantiene la proporción de la imagen */
-        cursor: pointer;
+    .nm-container{
+        display: block;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Alineación de los elementos internos */
+        padding: 0.1rem 1rem;
+        position: relative;
+        background-color: white;/* var(--primary-color); */
+        margin: 0;
+        
         
     }
 
+    .nm-logo {
+        flex-grow: 1; /* Permite que el logo utilice el espacio disponible */
+        display: flex;
+        justify-content: center; /* Centra el logo horizontalmente */
+        margin: 0;
+        padding: 0.1rem 0.5rem 0.1rem 2rem;
+        
+        height: auto;
+    }
 
-    .n-right, .n-menu {
-        gap: 2.5rem; /* Restablecemos el espacio original entre elementos */
+    .nm-logo img {
+        height: auto !important;
+        width: auto !important;
+
+        
+    }
+
+    .nm-container>:nth-child(1){ /*Afecta al primer child de ese contenedor*/
+        font-weight: bold;
+    }
+
+    .nm-menu{
+        position: fixed;
+        top: 4.1rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        left: 0;
+        display: flex;
+        background:white; /* var(--primary-color); */
+        flex-direction: column;
+        transform: translateX(-150%);
+        transition:all 300ms ease-in-out;
+        width: 100%;
+        font-size: 1.2rem;
+        z-index: 99;
+        height: calc(100vh - 3.9rem);/* Si da problemas, 3.2 */
+        cursor: pointer;
+    }
+
+    /*Span del menú hamburguesa, divisiones entre submenús - CAMBIARRRRRRRRRR----*/
+    .nm-menu a{
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid black;/* var(--border-color) */;
+
+        display: block; /* Asegura que el enlace ocupe todo el espacio horizontal para facilitar la interacción */
+        color: black; /* Establece un color de texto */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza las transiciones */
+        
+    }
+    .nm-menu a:hover, .nm-menu a:focus {
+        
+        color:#E62200; /* Cambia el color del texto en hover */
+    }
+
+    .m-funded-button{
+        width: 100%;
+        background-color: #E62200; /* var(--third-color); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 1rem 0rem;
+        border-radius: 999px;
+        color : rgb(0, 0, 0);/* var(--dark-bg); */
+
+        transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    }      
+    .m-funded-button:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Sombra más pronunciada */
+        transform: translateY(-2px); /* Eleva el botón */
+    
+        background-color: #650100 ; /* Un tono más claro o diferente */
+        color: #ffffff; /* Mantén el color del texto o cámbialo si necesario */
+    }
+
+    
+    .nm-container img {
+        height: 30px; /* Ajusta esto según la altura deseada */
+        width: auto; /* Mantiene la proporción de la imagen */
+        cursor: pointer;
+    }
+
+   
+    .sticky .n-logo img {
+        height: 50px; /* Tamaño reducido del logo en estado sticky */
+        width: auto; /* Mantiene la proporción de la imagen */
     }
 }
+
+
 
 
 
@@ -191,13 +327,13 @@
     .nm-logo {
         flex-grow: 1; /* Permite que el logo utilice el espacio disponible */
         display: flex;
-        justify-content: center; /* Centra el logo horizontalmente */
+        /* Centra el logo horizontalmente */
         margin: 0 auto;
         padding: 0.1rem 0.5rem 0.1rem 2rem;
     }
 
     .nm-logo img {
-        height: 100px !important;
+        height: auto !important;
         width: auto !important;
 
         
@@ -209,7 +345,7 @@
 
     .nm-menu{
         position: fixed;
-        top: 5rem;
+        top: 4.1rem;
         padding: 3rem 2rem;
         box-sizing: border-box;
         left: 0;
@@ -287,126 +423,8 @@
 }
 
 
-/* Versión Móvil */
-@media only screen and (max-width: 600px) {
-    .n-container{
-        display: none;
-    }
-    .nm-container{
-        display: block;
-        color: rgb(0, 0, 0);
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Alineación de los elementos internos */
-        padding: 0.1rem 1rem;
-        position: relative;
-        background-color: white;/* var(--primary-color); */
-        margin: 0;
-        
-    }
 
-    .nm-logo {
-        flex-grow: 1; /* Permite que el logo utilice el espacio disponible */
-        display: flex;
-        justify-content: center; /* Centra el logo horizontalmente */
-        margin: 0;
-        padding: 0.1rem 0.5rem 0.1rem 2rem;
-    }
-
-    .nm-logo img {
-        height: 100px !important;
-        width: auto !important;
-    }
-
-    .nm-container>:nth-child(1){ /*Afecta al primer child de ese contenedor*/
-        font-weight: bold;
-    }
-
-    .nm-menu{
-        position: fixed;
-        top: 5rem;
-        padding: 3rem 2rem;
-        box-sizing: border-box;
-        left: 0;
-        display: flex;
-        background:white; /* var(--primary-color); */
-        flex-direction: column;
-        transform: translateX(-150%);
-        transition:all 300ms ease-in-out;
-        width: 100%;
-        font-size: 1.2rem;
-        z-index: 99;
-        height: calc(100vh - 3.9rem);/* Si da problemas, 3.2 */
-        cursor: pointer;
-    }
-
-    /*Span del menú hamburguesa, divisiones entre submenús - CAMBIARRRRRRRRRR----*/
-    .nm-menu a{
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid black;/* var(--border-color) */;
-
-        display: block; /* Asegura que el enlace ocupe todo el espacio horizontal para facilitar la interacción */
-        color: black; /* Establece un color de texto */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza las transiciones */
-        
-    }
-    .nm-menu a:hover, .nm-menu a:focus {
-        
-        color:#E62200; /* Cambia el color del texto en hover */
-    }
-
-    .m-funded-button{
-        width: 100%;
-        background-color: #E62200; /* var(--third-color); */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        padding: 1rem 0rem;
-        border-radius: 999px;
-        color : rgb(0, 0, 0);/* var(--dark-bg); */
-
-        transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
-    }      
-    .m-funded-button:hover {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Sombra más pronunciada */
-        transform: translateY(-2px); /* Eleva el botón */
+@media only screen and (min-width: 1201px) {
     
-        background-color: #650100 ; /* Un tono más claro o diferente */
-        color: #ffffff; /* Mantén el color del texto o cámbialo si necesario */
-    }
-
     
-    .nm-container img {
-        height: 30px; /* Ajusta esto según la altura deseada */
-        width: auto; /* Mantiene la proporción de la imagen */
-        cursor: pointer;
-    }
-
-   /* VOY AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
-    .n-logo img {
-        height: 100px; /* Tamaño reducido del logo en estado sticky */
-        width: auto; /* Mantiene la proporción de la imagen */
-
-    }
-    .sticky .n-logo img {
-        height: 50px; /* Tamaño reducido del logo en estado sticky */
-        width: auto; /* Mantiene la proporción de la imagen */
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
