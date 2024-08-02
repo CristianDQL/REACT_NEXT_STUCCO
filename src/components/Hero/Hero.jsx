@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/src/utils/animation';
+import { ArrowBack } from '@mui/icons-material';
 
 const Hero = () => {
     const settings = {
@@ -18,12 +19,13 @@ const Hero = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        
     };
   
     return (
         <div className="h-wrapper">
             <div className="container">
-                <div className="h-container" layout>
+                <div className="h-container" >
                 <Slider {...settings} className='slider-container'>
                     {serviceData.map((item, index) => (
                     <div key={index}>

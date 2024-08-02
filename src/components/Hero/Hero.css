@@ -49,6 +49,25 @@
 }
 
 
+/* PRUEBA */
+
+/* Opciones para personalizar los puntos de navegación */
+.slider-container .slick-dots {
+    
+    display: flex !important; /* Importante para asegurar la visualización */
+    align-items: center; /* Alineación vertical de los puntos */
+    justify-content: center; /* Centrado horizontal de los puntos */
+    padding: 3rem; /* Sin padding adicional */
+}
+
+.slider-container .slick-dots li button:before {
+   
+    font-size: 1rem; /* Tamaño de los puntos */
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+    color: #E62200; /* Color para el punto activo */
+}
 
 
 
