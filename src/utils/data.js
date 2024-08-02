@@ -164,7 +164,17 @@ export const serviceData = [
     des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
   },
   {
-    icon: "/Services/luxury-home.jpg",
+    icon: "/Services/luxury-home-3.jpg",
+    title: "Stucco Patching",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+  },
+  {
+    icon: "/Services/luxury-home-5.jpg",
+    title: "Stucco Patching",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+  },
+  {
+    icon: "/Services/2.jpg",
     title: "Stucco Patching",
     des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
   },

@@ -27,11 +27,11 @@
 }
 
 /* Slider container */
-.slider-container {
+/* .slider-container {
     width: 100%;
     margin: 0 -0.23rem;
-    padding: 0 1rem; /* Optional: adjust padding for better centering */
-}
+    padding: 0 1rem; 
+} */
 
 /* Features section */
 .od-feature {
@@ -102,7 +102,7 @@
     animation: slide 1s infinite;
 }
 
-@keyframes slide {
+/* @keyframes slide {
     0%, 100% {
         transform: translateX(0);
     }
@@ -111,7 +111,6 @@
     }
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
     .slick-slide {
         display: flex;
@@ -131,7 +130,7 @@
         text-align: center;
     }
     .od-wrapper {
-        padding-top: 3rem; /* Ajustar padding para dispositivos móviles */
+        padding-top: 3rem; 
     }
     
-}
+} */

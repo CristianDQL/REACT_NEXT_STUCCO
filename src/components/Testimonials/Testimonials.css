@@ -18,18 +18,18 @@
 }
 
 /* Slider */
-.slick-slider {
+/* .slick-slider {
   margin-top: 5rem;
-}
-.slick-track {
+} */
+/* .slick-track {
   padding: 4rem 0rem;
-}
-.slick-slide > div {
+} */
+/* .slick-slide > div {
   padding: 0 20px;
-}
-.slick-dots {
+} */
+/* .slick-dots {
   bottom: 0px !important;
-}
+} */
 
 .poh-comment {
   display: flex !important;
@@ -108,6 +108,6 @@
     .poh-comment {
       padding: 1rem; /* Ajusta el padding para dispositivos pequeños */
     }
-  }
+}
 
 

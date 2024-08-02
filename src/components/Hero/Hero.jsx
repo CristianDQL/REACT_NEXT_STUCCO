@@ -18,7 +18,8 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        /* adaptiveHeight: false, */
         
     };
   
@@ -26,7 +27,7 @@ const Hero = () => {
         <div className="h-wrapper">
             <div className="container">
                 <div className="h-container" >
-                <Slider {...settings} className='slider-container'>
+                <Slider {...settings} className='h-slider-container'>
                     {serviceData.map((item, index) => (
                     <div key={index}>
                         
@@ -36,6 +37,8 @@ const Hero = () => {
                             className="project-image"
                             width="100%"
                             height="100%"
+                            /* objectFit="containe" */
+                            
                         />
                         
                         

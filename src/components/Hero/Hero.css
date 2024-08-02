@@ -1,3 +1,4 @@
+
 /* Estilos básicos para el contenedor principal del Hero */
 .h-wrapper {
     padding: 0; /* Elimina cualquier relleno por defecto */
@@ -23,7 +24,7 @@
 /* PORTFOLIO */
 
 /* Slider container */
-.slider-container {
+.h-slider-container {
     width: 100%;
     padding: 0 !important;  /* Usa !important para sobreescribir cualquier otro estilo */
     margin: 0 auto; /* Optional: adjust padding for better centering */
@@ -31,20 +32,26 @@
 
 /* portfolio final */
 
-.slick-slide { /* spacing in between each slide */
+.h-slider-container .slick-slide { /* spacing in between each slide */
     margin: -20px;
     width: 100%!important;
     
+    
 
 }
+.h-slider-container .slick-slide > div {
+    padding: 0 20px;
+  }
 
-.slider-container .slick-track {
+.h-slider-container .slick-track {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 4rem 0rem;
 }
 
-.slider-container .slick-list {
+.h-slider-container .slick-list {
     overflow: hidden;  /* Asegura que no se muestre contenido fuera del área de visualización */
 }
 
@@ -52,28 +59,24 @@
 /* PRUEBA */
 
 /* Opciones para personalizar los puntos de navegación */
-.slider-container .slick-dots {
+.h-slider-container .slick-dots {
     
     display: flex !important; /* Importante para asegurar la visualización */
     align-items: center; /* Alineación vertical de los puntos */
     justify-content: center; /* Centrado horizontal de los puntos */
-    padding: 3rem; /* Sin padding adicional */
+    padding: 4rem; /* Sin padding adicional */
+
+    bottom: 0px !important;
 }
 
-.slider-container .slick-dots li button:before {
+.h-slider-container .slick-dots li button:before {
    
     font-size: 1rem; /* Tamaño de los puntos */
 }
 
-.slider-container .slick-dots li.slick-active button:before {
+.h-slider-container .slick-dots li.slick-active button:before {
     color: #E62200; /* Color para el punto activo */
 }
 
 
-
-
-
-
-
-
-
+/* DOTS CENTRADOS EN MOVIL??? */
