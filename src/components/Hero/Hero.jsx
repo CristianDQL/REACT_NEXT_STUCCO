@@ -4,7 +4,7 @@ import React from 'react';
 import './Hero.css'; // Asegúrate de que el nombre del archivo CSS coincida
 import Image from 'next/image';
 import Slider from 'react-slick';
-import { serviceData } from '@/src/utils/data';
+import { heroData } from '@/src/utils/data';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="container">
                 <div className="h-container" >
                 <Slider {...settings} className='h-slider-container'>
-                    {serviceData.map((item, index) => (
+                    {heroData.map((item, index) => (
                     <div key={index}>
                         
                         <img

@@ -16,6 +16,7 @@ import Testimonials from '@/src/components/Testimonials/Testimonials';
 import Footer from '@/src/components/Footer/Footer';
 import Portfolio from '@/src/components/OurDiff/Portfolio';
 import AboutUs from '@/src/components/AboutUs/AboutUs';
+import SplitScreen from '@/src/components/SplitScreen/SplitScreen';
 
 export default function Home() {
 
@@ -28,6 +29,9 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       {/* <BrandingVideo/>  */}
+
+      <SplitScreen/>
+
       <WhatWeDo/> {/* Service */}
 
       {/* MODIFICAR cambio de color entre secciones, a rojo? */}

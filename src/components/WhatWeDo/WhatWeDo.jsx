@@ -2,7 +2,7 @@
 
 import React from 'react'
 import './WhatWeDo.css'
-import { features, serviceData } from '@/src/utils/data'
+import { WhatWeDodATA } from '@/src/utils/data'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { desVariants, tagVariants, titleVariants, containerVariants } from '@/src/utils/animation'
@@ -26,7 +26,7 @@ const WhatWeDo = () => {
                     </motion.span>
                     <motion.span initial="offscreen" whileInView={"onscreen"} variants={titleVariants} className='title'>
                         {" "}
-                        Transforming Spaces with Premium Stucco and Expert Craftsmanship
+                        Transforming Spaces with Optimum Stucco and Expert Craftsmanship
                     </motion.span>
                     <motion.span initial="offscreen" whileInView={"onscreen"} variants={desVariants} className='des'>Here is how we can evaluate</motion.span>
                 </div>
@@ -34,7 +34,7 @@ const WhatWeDo = () => {
 
                 {/* Bloque imàgenes */}
                 <div className="wwd-features">
-                    {serviceData.map((feature, i) => (
+                    {WhatWeDodATA.map((feature, i) => (
                         <motion.div 
                             key={i}
                             className="wwd-feature"
@@ -45,6 +45,7 @@ const WhatWeDo = () => {
                         >
                             <Image src={feature.icon} alt={feature.title} width={250} height={250} />
                             <span>{feature.title}</span>
+                            {/* <span>{feature.des}</span> */}
                             
                         </motion.div>
                     ))}

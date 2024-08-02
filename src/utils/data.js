@@ -151,8 +151,14 @@ export const testimonialsData = [
   },
 ];
 
+
+
+
+
+/* DEFINITIVOS */
+
 /* sERVICES - copiado de OURDIFF*/
-export const serviceData = [
+export const heroData = [
   {
     icon: "/Services/luxury-home.jpg",
     title: "Stucco Repair",
@@ -179,5 +185,39 @@ export const serviceData = [
     des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
   },
 ];
+
+/* sERVICES - copiado de OURDIFF*/
+export const WhatWeDodATA = [
+  {
+    icon: "/Services/luxury-home.jpg",
+    title: "Stucco Repair",
+    des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
+  },
+  {
+    icon: "/Services/EIFS.jpg",
+    title: "EIFS: Exterior Insulation Finishing Systems",
+    des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
+  },
+  {
+    icon: "/Services/luxury-home-3.jpg",
+    title: "Stucco Patching",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+  },
+  
+];
+
+/* Datos para los Splits, cada json será una aprte diferente. Crear uno por cada sección */
+export const splitScreenData1 = {
+  title: "CUSTOM LUXURY HOME BUILDERS MIAMI",
+  paragraphs: [
+    "TREO is a luxury residential homebuilder and developer specialising in single-family homes and residential development projects which require unparalleled levels of quality and service excellence to bring a client’s vision to life.",
+    "Headquartered in North Miami Beach, we partner with clients, architects, interior designers and engineering consultants to deliver the highest quality construction management services in South Florida’s luxury residential market.",
+    "Designing and building your own home is no small endeavor. Our approach emphasizes working collaboratively and communicating effectively so that, together, we create a custom home that tells our client’s story, is sensitive to context and connects the inhabitants to their environment."
+  ],
+  buttonText: "See More >>",
+  buttonLink: "#",
+  imageUrl: "/services/luxury-home-2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
 
 

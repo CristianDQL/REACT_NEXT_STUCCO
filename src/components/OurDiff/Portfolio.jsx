@@ -2,14 +2,14 @@ import React from 'react';
 import './Portfolio.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { serviceData } from '@/src/utils/data';
+import { heroData } from '@/src/utils/data';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/src/utils/animation';
 
 const Portfolio = () => {
-  const duplicatedData = [...serviceData, ...serviceData];
+  const duplicatedData = [...heroData, ...heroData];
 
   const settings = {
     dots: true,
