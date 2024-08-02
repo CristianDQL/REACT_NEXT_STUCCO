@@ -61,12 +61,15 @@
 /* Opciones para personalizar los puntos de navegación */
 .h-slider-container .slick-dots {
     
-    display: flex !important; /* Importante para asegurar la visualización */
-    align-items: center; /* Alineación vertical de los puntos */
-    justify-content: center; /* Centrado horizontal de los puntos */
-    padding: 4rem; /* Sin padding adicional */
+    display: flex !important; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 0 4rem 0; 
 
-    bottom: 0px !important;
+    bottom: 0.625rem;
+
+    position: absolute;
+    width: 100%;
 }
 
 .h-slider-container .slick-dots li button:before {
