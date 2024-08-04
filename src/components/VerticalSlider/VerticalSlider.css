@@ -1,13 +1,26 @@
+.vs-wrapper {
+    position: relative;
+}
 
 
-/* MODIFICARRRR */
 .vs-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: #333;
+}
+/* .vs-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    color: #333; /* Un gris oscuro para el texto */
-}
+     
+} */
 
 /* BLOQUES DE IMàAGENES */
 /* Features section */
@@ -33,6 +46,13 @@
     transition: transform 0.5s;
     cursor: pointer; /* Adding pointer cursor */
 
+}
+
+.vs-feature img { /* Estilo directo a la imagen */
+    border: 1px solid #adadad; /* Borde sutil, gris claro */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    padding: 0px; /* Pequeño padding para crear un efecto de marco */
+    background-color: #9c9c9c; /* Fondo blanco para realzar el borde en imágenes claras */
 }
   
 .vs-feature:hover {
