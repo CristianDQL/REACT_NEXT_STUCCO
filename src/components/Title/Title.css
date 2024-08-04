@@ -1,0 +1,39 @@
+.t-wrapper{
+    position: relative;
+    
+    padding: 0;
+    margin-top: -9rem;
+
+}
+.t-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Head of the section */
+.t-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+
+    
+    
+}
+.t-head .tag {
+    color: #E62200; 
+}
+.t-head .title {
+    color: #333;
+}
+.t-head .des {
+    color: #333; 
+}
+

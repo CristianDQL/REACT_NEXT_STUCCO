@@ -1,4 +1,4 @@
-.sc-container {
+.scl-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,14 +7,14 @@
 }
  
 /* Text Section */
-.sc-textSection {
+.scl-textSection {
     flex: 1;
     padding: 20px;
     max-width: 40%; /* Ajusta esto según el diseño */
 
     margin: 0 2rem 0 2rem;
 }
-h1 {
+.scl-textSection h1 {
     font-size: 1.7rem; /* Tamaño grande para el título */
     font-weight: bold; /* Texto en negrita para el título */
     margin-bottom: 1rem; /* Espacio después del título */
@@ -22,14 +22,15 @@ h1 {
     padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
 }
 
-p {
+.scl-textSection p {
     font-size: 0.8rem; /* Tamaño estándar para el texto */
     line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
     margin-bottom: 1rem; /* Espacio entre párrafos */
+    text-align: justify;
 }
 
 /* IMage Section */
-.sc-imageSection {
+.scl-imageSection {
     flex: 1;
     position: relative;
     height:20rem; /* Ajusta la altura según sea necesario */
@@ -39,13 +40,13 @@ p {
 }
 
 
-.sc-button-container {
+.scl-button-container {
     margin-top: 1rem;
     text-align: center;
     padding: 0.5rem;
 }
   
-.sc-button {
+.scl-button {
     background-color: #E62200;
     color: white;
     padding: 0.8rem 2rem;
@@ -58,13 +59,13 @@ p {
     transition: background-color 0.5s ease;
 }
   
-.sc-button:hover {
+.scl-button:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     transform: translateY(-2px);
     background-color: #650100;
     color: #ffffff;
 }
-.sc-arrow-icon {
+.scl-arrow-icon {
     margin-left: 0.5rem;
     animation: slide 1s infinite;
 }
@@ -79,5 +80,6 @@ p {
 
 
 
+ 
 /* VERSIÓN TABLET PONERLO FOTO ARRIBA Y TEXTO ABAJO */
 /* VERSION MOVIL DEJARLO SIN NADA PORQUE AHI NO SE VA A USAR */

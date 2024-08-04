@@ -16,7 +16,8 @@ import Testimonials from '@/src/components/Testimonials/Testimonials';
 import Footer from '@/src/components/Footer/Footer';
 import Portfolio from '@/src/components/OurDiff/Portfolio';
 import AboutUs from '@/src/components/AboutUs/AboutUs';
-import SplitScreen from '@/src/components/SplitScreen/SplitScreen';
+import SplitScreenL from '@/src/components/SplitScreenL/SplitScreenL';
+import Title from '@/src/components/Title/Title';
 
 export default function Home() {
 
@@ -28,14 +29,19 @@ export default function Home() {
     <motion.div className="app" animate={controls}>
       <Navbar/>
       <Hero/>
+      {/* Services */}
+      <Title/>
+      <SplitScreenL/>
+
+
+      {/* Fin Services */}
+
+
       {/* <BrandingVideo/>  */}
-
-      <SplitScreen/>
-
-      <WhatWeDo/> {/* Service */}
+      {/* <WhatWeDo/>  */}
 
       {/* MODIFICAR cambio de color entre secciones, a rojo? */}
-      <motion.div
+      {/* <motion.div
         onViewportEnter={() =>
           controls.start({
             backgroundColor: "rgb(203, 203, 203)",
@@ -46,16 +52,16 @@ export default function Home() {
             backgroundColor: "white",
           })
         }
-        viewport={{amount: 0.4}} /* cantidad de pantalla vista para comenzar animación */
+        viewport={{amount: 0.4}} 
       >
         <Portfolio/>
-      </motion.div>
-
+      </motion.div> */}
+      <Portfolio/>
 
       <AboutUs/>
 
-      {/* Cambio de color a morado seccion WWI */}
-      <motion.div
+      
+      {/* <motion.div
         onViewportEnter={() =>
           controls.start({
             backgroundColor: "rgb(203, 203, 203)",
@@ -66,10 +72,11 @@ export default function Home() {
             backgroundColor: "white",
           })
         }
-        viewport={{amount: 0.4}} /* cantidad de pantalla vista para comenzar animación */
+        viewport={{amount: 0.4}} 
       >
         <Testimonials/>
-      </motion.div>
+      </motion.div> */}
+      <Testimonials/>
       
       <HowItWorks/>
 

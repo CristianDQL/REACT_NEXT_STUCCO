@@ -1,26 +1,26 @@
 import React from 'react';
-import './SplitScreen.css';
+import './SplitScreenR.css';
 import Image from 'next/image';
 
 import { splitScreenData1 } from '@/src/utils/data'
 
-const SplitScreen = () => {
+const SplitScreenR = () => {
   return (
-    <div className="sc-wrapper">
+    <div className="scr-wrapper">
       <div className="container">
-        <div className="sc-container">
-          <div className="sc-textSection">
+        <div className="scr-container">
+          <div className="scr-textSection">
             <h1>{splitScreenData1.title}</h1>
             {splitScreenData1.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-            <div className="sc-button-container">
-              <button className="sc-button">
+            <div className="scr-button-container">
+              <button className="scr-button">
                 {splitScreenData1.buttonText}
               </button>
             </div>
           </div>
-          <div className="sc-imageSection">
+          <div className="scr-imageSection">
             <Image src={splitScreenData1.imageUrl} alt={splitScreenData1.imageAlt} layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -29,5 +29,4 @@ const SplitScreen = () => {
   );
 };
 
-export default SplitScreen;
-
+export default SplitScreenR;

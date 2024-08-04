@@ -208,11 +208,11 @@ export const WhatWeDodATA = [
 
 /* Datos para los Splits, cada json será una aprte diferente. Crear uno por cada sección */
 export const splitScreenData1 = {
-  title: "CUSTOM LUXURY HOME BUILDERS MIAMI",
+  title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
   paragraphs: [
-    "TREO is a luxury residential homebuilder and developer specialising in single-family homes and residential development projects which require unparalleled levels of quality and service excellence to bring a client’s vision to life.",
-    "Headquartered in North Miami Beach, we partner with clients, architects, interior designers and engineering consultants to deliver the highest quality construction management services in South Florida’s luxury residential market.",
-    "Designing and building your own home is no small endeavor. Our approach emphasizes working collaboratively and communicating effectively so that, together, we create a custom home that tells our client’s story, is sensitive to context and connects the inhabitants to their environment."
+    "Optimum Stucco Inc. is a leading stucco contractor based in Miami-Dade County, established in 2016, specializing in high-quality stucco for residential and commercial properties.",
+    "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project.",
+    "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
   ],
   buttonText: "See More >>",
   buttonLink: "#",
