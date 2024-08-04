@@ -2,14 +2,14 @@
     position: relative;
     
     padding: 0;
-    margin-top: -9rem;
+    margin-top: -13rem;
 
 }
 .t-container{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -19,7 +19,7 @@
 .t-head{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.01rem;
     align-items: center;
     justify-content: center;
     width: 75%;
@@ -35,5 +35,10 @@
 }
 .t-head .des {
     color: #333; 
+}
+
+.t-head .title, .t-head .des {
+    color: #333;
+    line-height: 1.2; /* Ajusta según necesidad, menor valor = menos espacio */
 }
 

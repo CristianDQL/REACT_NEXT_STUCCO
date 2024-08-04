@@ -16,8 +16,12 @@ import Testimonials from '@/src/components/Testimonials/Testimonials';
 import Footer from '@/src/components/Footer/Footer';
 import Portfolio from '@/src/components/OurDiff/Portfolio';
 import AboutUs from '@/src/components/AboutUs/AboutUs';
+
 import SplitScreenL from '@/src/components/SplitScreenL/SplitScreenL';
+import { splitScreenData1 } from '@/src/utils/data';
+
 import Title from '@/src/components/Title/Title';
+import { titleServicesData } from '@/src/utils/data';
 
 export default function Home() {
 
@@ -30,8 +34,13 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       {/* Services */}
-      <Title/>
-      <SplitScreenL/>
+      <Title
+        tag={titleServicesData.tag} 
+        title={titleServicesData.title} 
+        description={titleServicesData.description} 
+      
+      />
+      <SplitScreenL data={splitScreenData1}/>
 
 
       {/* Fin Services */}

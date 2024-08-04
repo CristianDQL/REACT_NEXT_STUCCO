@@ -186,6 +186,29 @@ export const heroData = [
   },
 ];
 
+/* Title Services */
+// data.js
+export const titleServicesData = {
+  tag: "What we do",
+  title: "Transforming Spaces with Optimum Stucco and Expert Craftsmanship",
+  description: ""
+};
+
+
+/* Datos para los Splits, cada json será una aprte diferente. Crear uno por cada sección */
+export const splitScreenData1 = {
+  title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
+  paragraphs: [
+    "Optimum Stucco Inc. is a leading stucco contractor based in Miami-Dade County, established in 2016, specializing in high-quality stucco for residential and commercial properties.",
+    "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project.",
+    "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
+  ],
+  buttonText: "See More >>",
+  buttonLink: "#",
+  imageUrl: "/services/luxury-home-2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+
 /* sERVICES - copiado de OURDIFF*/
 export const WhatWeDodATA = [
   {
@@ -206,18 +229,6 @@ export const WhatWeDodATA = [
   
 ];
 
-/* Datos para los Splits, cada json será una aprte diferente. Crear uno por cada sección */
-export const splitScreenData1 = {
-  title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
-  paragraphs: [
-    "Optimum Stucco Inc. is a leading stucco contractor based in Miami-Dade County, established in 2016, specializing in high-quality stucco for residential and commercial properties.",
-    "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project.",
-    "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
-  ],
-  buttonText: "See More >>",
-  buttonLink: "#",
-  imageUrl: "/services/luxury-home-2.jpg",
-  imageAlt: "Luxury Home Interior"
-};
+
 
 
