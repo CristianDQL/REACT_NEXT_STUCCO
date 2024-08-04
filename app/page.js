@@ -23,6 +23,9 @@ import { splitScreenData1 } from '@/src/utils/data';
 import Title from '@/src/components/Title/Title';
 import { titleServicesData } from '@/src/utils/data';
 
+import { servicesData } from '@/src/utils/data';
+import VerticalSlider from '@/src/components/VerticalSlider/VerticalSlider';
+
 export default function Home() {
 
   /* Animación que afectará al scrollin, a cargo de la app, 
@@ -41,6 +44,7 @@ export default function Home() {
       
       />
       <SplitScreenL data={splitScreenData1}/>
+      <VerticalSlider features={servicesData} />
 
 
       {/* Fin Services */}

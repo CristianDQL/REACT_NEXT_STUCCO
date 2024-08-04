@@ -42,3 +42,25 @@
     line-height: 1.2; /* Ajusta según necesidad, menor valor = menos espacio */
 }
 
+
+
+
+@media (max-width: 768px) {
+    
+    .t-head {
+        width: 90%; /* Aumenta el ancho de la cabecera */
+    }
+    .t-head .des {
+        width: 100%; /* Asegura que el texto ocupe todo el ancho */
+        padding: 0 1rem; /* Añade padding para los lados */
+        text-align: center; /* Centra el texto */
+    }
+}
+
+@media (max-width: 576px) {
+    .t-head {
+        width: 100%; /* La cabecera ocupa todo el ancho */
+        padding: 0 1rem; /* Añade padding para los lados */
+    }
+    
+}

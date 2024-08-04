@@ -209,8 +209,8 @@ export const splitScreenData1 = {
   imageAlt: "Luxury Home Interior"
 };
 
-/* sERVICES - copiado de OURDIFF*/
-export const WhatWeDodATA = [
+/* sERVICES */
+export const servicesData = [
   {
     icon: "/Services/luxury-home.jpg",
     title: "Stucco Repair",
