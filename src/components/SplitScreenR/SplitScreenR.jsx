@@ -26,6 +26,7 @@ const SplitScreenR = ({ data }) => {
             
               <div className="scr-textSection">
                 <h1>{data.title}</h1>
+                <div className='scr-linea'></div>
                 {data.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}

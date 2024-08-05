@@ -24,9 +24,14 @@
     font-size: 1.7rem; /* Tamaño grande para el título */
     font-weight: bold; /* Texto en negrita para el título */
     margin-bottom: 1rem; /* Espacio después del título */
-    border-bottom: 3px solid black; /* Línea debajo del título */
+    /* border-bottom: 3px solid black;  Línea debajo del título  */
     padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
     color: #333;
+}
+.scl-linea{
+    border-bottom: 2px solid rgb(0, 0, 0); /* Línea debajo del título */
+    width: 30%;
+    padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
 }
 
 .scl-textSection p {

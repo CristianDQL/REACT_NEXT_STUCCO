@@ -16,6 +16,7 @@ const SplitScreenL = ({ data }) => {
             
               <div className="scl-textSection">
                 <h1>{data.title}</h1>
+                <div className='scl-linea'></div>
                 {data.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
