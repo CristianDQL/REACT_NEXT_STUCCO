@@ -1,20 +1,26 @@
-.scl-container {
+.scr-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     color: #757575; /* Un gris oscuro para el texto */
+
+    margin: 2rem 0;
+    
 }
+
+
  
 /* Text Section */
-.scl-textSection {
+.scr-textSection {
     flex: 1;
     padding: 30px;
     max-width: 40%; /* Ajusta esto según el diseño */
 
-    margin: 0 3rem 0 3rem;
+    margin: 0 5rem 0 1rem;
 }
-.scl-textSection h1 {
+.scr-textSection h1 {
     font-size: 1.7rem; /* Tamaño grande para el título */
     font-weight: bold; /* Texto en negrita para el título */
     margin-bottom: 1rem; /* Espacio después del título */
@@ -23,7 +29,7 @@
     color: #333;
 }
 
-.scl-textSection p {
+.scr-textSection p {
     font-size: 0.95rem; /* Tamaño estándar para el texto */
     line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
     margin-bottom: 1rem; /* Espacio entre párrafos */
@@ -31,23 +37,23 @@
 }
 
 /* IMage Section */
-.scl-imageSection {
+.scr-imageSection {
     flex: 1;
     position: relative;
-    height:20rem; /* Ajusta la altura según sea necesario */
+    height:30rem; /* Ajusta la altura según sea necesario */
 
     max-width: 40%;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 1rem 0 5rem;
 }
 
 
-.scl-button-container {
+.scr-button-container {
     margin-top: 1rem;
     text-align: center;
     padding: 0.5rem;
 }
   
-.scl-button {
+.scr-button {
     background-color: #E62200;
     color: white;
     padding: 0.6rem 1rem;
@@ -60,13 +66,13 @@
     transition: background-color 0.5s ease;
 }
   
-.scl-button:hover {
+.scr-button:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     transform: translateY(-2px);
     background-color: #650100;
     color: #ffffff;
 }
-.scl-arrow-icon {
+.scr-arrow-icon {
     margin-left: 0.5rem;
     animation: slide 1s infinite;
 }
@@ -77,27 +83,34 @@
        only screen and (min-width: 601px) and (max-width: 900px) {
 
 
-
-    .scl-blocks {
-        display: flex;
-        flex-direction: column-reverse; /* Asegurar dirección en columna */
-        align-items: center; /* Centrar contenido */
-    }
-
-    .scl-block {
-        width: 100%; /* Establece el ancho de cada bloque al 100% */
-        margin: 1rem 0; /* Espacio arriba y abajo para cada bloque */
-    }
-
-    .scl-textSection {
-        max-width: 100%; 
-        margin: 1rem 3; 
-    }
-
     
-    .scl-imageSection {
+    .scr-container {
+        flex-direction: column; /* Coloca la imagen encima del texto */
+        align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
         
-        max-width: 100%; 
-        margin: 1rem 0;
     }
+
+    .scr-textSection{
+        flex: none;
+        max-width: 100%; 
+        margin: 1rem 5rem 0 5rem;
+    }
+    
+    .scr-imageSection {
+        flex: none; /* Elimina la flexibilidad para que tomen el ancho completo */
+        max-width: 100%; /* Establece el ancho máximo al 100% para asegurar que ocupen todo el contenedor */
+        margin: 1rem 0; /* Establece un margen uniforme en la parte superior e inferior */
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+

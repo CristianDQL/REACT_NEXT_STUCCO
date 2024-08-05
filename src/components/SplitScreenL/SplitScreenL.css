@@ -2,9 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     color: #757575; /* Un gris oscuro para el texto */
+
+    margin: 2rem 0;
+    
 }
+
+
  
 /* Text Section */
 .scl-textSection {
@@ -12,7 +18,7 @@
     padding: 30px;
     max-width: 40%; /* Ajusta esto según el diseño */
 
-    margin: 0 3rem 0 3rem;
+    margin: 0 1rem 0 5rem;
 }
 .scl-textSection h1 {
     font-size: 1.7rem; /* Tamaño grande para el título */
@@ -34,10 +40,10 @@
 .scl-imageSection {
     flex: 1;
     position: relative;
-    height:20rem; /* Ajusta la altura según sea necesario */
+    height:30rem; /* Ajusta la altura según sea necesario */
 
     max-width: 40%;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 5rem 0 1rem;
 }
 
 
@@ -77,29 +83,26 @@
        only screen and (min-width: 601px) and (max-width: 900px) {
 
 
-
-    .scl-blocks {
-        display: flex;
-        flex-direction: column-reverse; /* Asegurar dirección en columna */
-        align-items: center; /* Centrar contenido */
+    
+    .scl-container {
+        flex-direction: column-reverse; /* Coloca la imagen encima del texto */
+        align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
+        
     }
 
-    .scl-block {
-        width: 100%; /* Establece el ancho de cada bloque al 100% */
-        margin: 1rem 0; /* Espacio arriba y abajo para cada bloque */
-    }
-
-    .scl-textSection {
+    .scl-textSection{
+        flex: none;
         max-width: 100%; 
-        margin: 1rem 3; 
+        margin: 1rem 5rem 0 5rem;
     }
-
     
     .scl-imageSection {
-        
-        max-width: 100%; 
-        margin: 1rem 0;
+        flex: none; /* Elimina la flexibilidad para que tomen el ancho completo */
+        max-width: 100%; /* Establece el ancho máximo al 100% para asegurar que ocupen todo el contenedor */
+        margin: 1rem 0; /* Establece un margen uniforme en la parte superior e inferior */
     }
+    
+    
 }
 
 

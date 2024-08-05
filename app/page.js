@@ -25,6 +25,7 @@ import { titleServicesData } from '@/src/utils/data';
 
 import { servicesData } from '@/src/utils/data';
 import VerticalSlider from '@/src/components/VerticalSlider/VerticalSlider';
+import Services from '@/src/components/Services/Services';
 
 export default function Home() {
 
@@ -43,8 +44,9 @@ export default function Home() {
         description={titleServicesData.description} 
       
       />
-      <SplitScreenL data={splitScreenData1}/>
-      <VerticalSlider features={servicesData} />
+      <Services/>
+      {/* <SplitScreenL data={splitScreenData1}/>
+      <VerticalSlider features={servicesData} /> */}
 
 
       {/* Fin Services */}

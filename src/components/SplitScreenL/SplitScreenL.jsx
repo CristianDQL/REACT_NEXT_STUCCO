@@ -11,9 +11,9 @@ const SplitScreenL = ({ data }) => {
         <div className="scl-container">
 
 
-          <div className="scl-blocks">
+          
             {/* Text Section */}
-            <div className="scl-block">
+            
               <div className="scl-textSection">
                 <h1>{data.title}</h1>
                 {data.paragraphs.map((paragraph, index) => (
@@ -25,16 +25,16 @@ const SplitScreenL = ({ data }) => {
                   </button>
                 </div>
               </div>
-            </div>
+            
 
             {/* IMage Section */}
-            <div className="scl-block">
+            
               <div className="scl-imageSection">
                 <Image src={data.imageUrl} alt={data.imageAlt} layout="fill" objectFit="cover" />
               </div>
-            </div>
+            
 
-          </div>
+          
         </div>
       </div>
     </div>

@@ -208,9 +208,24 @@ export const splitScreenData1 = {
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"
 };
+export const splitScreenData2 = {
+  title: "COMMERCIAL STUCCO EXCELLENCE",
+  paragraphs: [
+    "Optimum Stucco Inc. leads in providing advanced stucco solutions for commercial properties in Miami, focusing on durability and aesthetic appeal. Our 'Structural Coat' technique, ideal for both new finishes and upgrades over existing stucco, offers cost-effective, stylish protection.",
+    "With extensive experience in enhancing corporate buildings and retail spaces, no project is too complex for our skilled team. Choose Optimum Stucco Inc. for a finish that combines resilience with striking curb appeal, elevating the look of your business."
+    
+    
+  ],
+  buttonText: "See More",
+  buttonLink: "#",
+  imageUrl: "/Services/2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+
+
 
 /* sERVICES */
-export const servicesData = [
+export const verticalSliderData1 = [
   {
     icon: "/Services/luxury-home.jpg",
     title: "Stucco Repair",
