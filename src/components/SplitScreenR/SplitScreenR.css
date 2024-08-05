@@ -31,7 +31,8 @@
 .scr-linea{
     border-bottom: 2px solid rgb(0, 0, 0); /* Línea debajo del título */
     width: 30%;
-    padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+    padding: 0rem; /* Espacio entre el texto y la línea */
+    margin: 0;
 }
 
 .scr-textSection p {
