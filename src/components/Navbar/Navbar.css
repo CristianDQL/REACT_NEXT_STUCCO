@@ -1,7 +1,4 @@
 
-/*MODIFICAR COLOR DE MORADO A blanco del Navbar------------*/
-
-
 .n-wrapper{
     background-color: white;/* var(--primary-color); */ /*Color predefinidio en global.css*/
     width: 100%;
@@ -410,7 +407,7 @@
         cursor: pointer;
     }
 
-   /* VOY AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+  
     .n-logo img {
         height: 100px; /* Tamaño reducido del logo en estado sticky */
         width: auto; /* Mantiene la proporción de la imagen */

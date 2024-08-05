@@ -17,7 +17,7 @@ const Navbar = () => {
     const [navStyle, setNavStyle] = useState("");
     const { scrollYProgress } = useScroll();
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        if (latest > 0.2) { 
+        if (latest > 0.10) { 
             setNavStyle("sticky");
         } else {
             setNavStyle("");

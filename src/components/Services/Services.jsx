@@ -11,12 +11,18 @@ const Services = () => {
       <div className="container">
         <div className="ser-container">
 
-          <SplitScreenL className="ser-split" data={splitScreenData1}/>
-          <SplitScreenR className="ser-split" data={splitScreenData2}/>
-          <SplitScreenL className="ser-split" data={splitScreenData3}/>
-          <SplitScreenR className="ser-split" data={splitScreenData4}/>
-          <VerticalSlider className="ser-vertical" features={verticalSliderData1} />
 
+          <div className="ser-split-container">
+            <SplitScreenL data={splitScreenData1}/>
+            <SplitScreenR data={splitScreenData2}/>
+            <SplitScreenL data={splitScreenData3}/>
+            <SplitScreenR data={splitScreenData4}/>
+          </div>
+
+          <div className="ser-vertical-container">
+            <VerticalSlider features={verticalSliderData1} />
+          </div>
+          
         </div>
       </div>
     </div>
@@ -25,4 +31,4 @@ const Services = () => {
 
 export default Services
 
-/* - Crear un componente Services, en el que meta el SlipteScreen y el verticalSlider, y oculto o enseño uno según móvil o desktop tablet. */
+
