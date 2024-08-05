@@ -8,13 +8,13 @@ import './page.css'
 import Hero from '@/src/components/Hero/Hero';
 import BrandingVideo from '@/src/components/BrandingVideo/BrandingVideo';
 import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
-import OurDiff from '@/src/components/OurDiff/OurDiff';
+import OurDiff from '@/src/components/Portfolio/OurDiff';
 import { motion, unseAnimation, useAnimation  } from "framer-motion";
 import HowItWorks from '@/src/components/HowItWorks/HowItWorks';
 import WhoWeInvest from '@/src/components/WhoWeInvest/WhoWeInvest';
 import Testimonials from '@/src/components/Testimonials/Testimonials';
 import Footer from '@/src/components/Footer/Footer';
-import Portfolio from '@/src/components/OurDiff/Portfolio';
+import Portfolio from '@/src/components/Portfolio/Portfolio';
 import AboutUs from '@/src/components/AboutUs/AboutUs';
 
 import SplitScreenL from '@/src/components/SplitScreenL/SplitScreenL';
@@ -37,13 +37,7 @@ export default function Home() {
     <motion.div className="app" animate={controls}>
       <Navbar/>
       <Hero/>
-      {/* Services */}
-      <Title
-        tag={titleServicesData.tag} 
-        title={titleServicesData.title} 
-        description={titleServicesData.description} 
-      
-      />
+            
       <Services/>
       {/* <SplitScreenL data={splitScreenData1}/>
       <VerticalSlider features={servicesData} /> */}

@@ -3,13 +3,21 @@ import './Services.css';
 import SplitScreenL from '../SplitScreenL/SplitScreenL';
 import SplitScreenR from '../SplitScreenR/SplitScreenR';
 import VerticalSlider from '../VerticalSlider/VerticalSlider';
-import { splitScreenData2, splitScreenData4, splitScreenData1, verticalSliderData1, splitScreenData3 } from '@/src/utils/data';
+import { titleServicesData, splitScreenData2, splitScreenData4, splitScreenData1, verticalSliderData1, splitScreenData3 } from '@/src/utils/data';
+import Title from '../Title/Title';
 
 const Services = () => {
   return (
     <div className="ser-wrapper">
       <div className="container">
         <div className="ser-container">
+
+          <Title
+            tag={titleServicesData.tag} 
+            title={titleServicesData.title} 
+            description={titleServicesData.description} 
+          
+          />
 
 
           <div className="ser-split-container">

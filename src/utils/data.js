@@ -274,6 +274,60 @@ export const verticalSliderData1 = [
   
 ];
 
+/* Title Portfolio */
+
+export const titlePortfolioData = {
+  tag: "Our Selected Stucco Projects",
+  title: "Exceptional Stucco Finishes by Miami's Leading Experts",
+  description: ""
+};
 
 
-
+/* Portfolio */
+export const portfolioData = [
+  {
+    icon: "/Services/luxury-home.jpg",
+    title: "Stucco Repair"
+    
+  },
+  {
+    icon: "/Services/luxury-home-2.jpg",
+    title: "Re-Stucco"
+  },
+  {
+    icon: "/Services/luxury-home-3.jpg",
+    title: "Stucco Patching"
+  },
+  {
+    icon: "/Services/luxury-home-5.jpg",
+    title: "Stucco Patching"
+  },
+  {
+    icon: "/Services/2.jpg",
+    title: "Stucco Patching"
+  },
+  {
+    icon: "/Services/luxury-home.jpg",
+    title: "Stucco Repair"
+    
+  },
+  {
+    icon: "/Services/luxury-home-2.jpg",
+    title: "Re-Stucco"
+  },
+  {
+    icon: "/Services/2.jpg",
+    title: "Stucco Patching"
+  },
+  {
+    icon: "/Services/luxury-home.jpg",
+    title: "Stucco Repair"
+    
+  },
+  
+  {
+    icon: "/Services/luxury-home-2.jpg",
+    title: "Re-Stucco"
+  },
+  
+];
