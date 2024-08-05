@@ -73,14 +73,31 @@
 
 
 
+@media only screen and (min-width: 901px) and (max-width: 1200px),
+       only screen and (min-width: 601px) and (max-width: 900px) {
 
 
 
+    .scl-blocks {
+        display: flex;
+        flex-direction: column-reverse; /* Asegurar dirección en columna */
+        align-items: center; /* Centrar contenido */
+    }
 
+    .scl-block {
+        width: 100%; /* Establece el ancho de cada bloque al 100% */
+        margin: 1rem 0; /* Espacio arriba y abajo para cada bloque */
+    }
 
+    .scl-textSection {
+        max-width: 100%; 
+        margin: 1rem 3; 
+    }
 
-
-/* Reducir el texto y cambiar los texto, también hacer otro split pero que sea a la inversa, la foto a la izquierda, igual pero a la inversa
- 
-*//* VERSIÓN TABLET PONERLO FOTO ARRIBA Y TEXTO ABAJO */
-/* VERSION MOVIL DEJARLO SIN NADA PORQUE AHI NO SE VA A USAR */
+    
+    .scl-imageSection {
+        
+        max-width: 100%; 
+        margin: 1rem 0;
+    }
+}
