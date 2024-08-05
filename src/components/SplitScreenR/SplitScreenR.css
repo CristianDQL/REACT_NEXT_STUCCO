@@ -22,7 +22,7 @@
 }
 .scr-textSection h1 {
     font-size: 1.7rem; /* Tamaño grande para el título */
-    font-weight: bold; /* Texto en negrita para el título */
+    font-weight: 500; /* Texto en negrita para el título */
     margin-bottom: 1rem; /* Espacio después del título */
     /* border-bottom: 3px solid black;  Línea debajo del título  */
     padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
@@ -85,7 +85,7 @@
 
 
 
-@media only screen and (min-width: 901px) and (max-width: 1200px),
+@media only screen and (min-width: 901px) and (max-width: 1040px),
        only screen and (min-width: 601px) and (max-width: 900px) {
 
 

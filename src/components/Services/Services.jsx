@@ -13,6 +13,7 @@ const Services = () => {
 
           <SplitScreenL data={splitScreenData1}/>
           <SplitScreenR data={splitScreenData2}/>
+          <SplitScreenL data={splitScreenData1}/>
           <VerticalSlider features={verticalSliderData1} />
 
         </div>
