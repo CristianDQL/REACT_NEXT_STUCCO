@@ -3,16 +3,16 @@
     align-items: center;
     justify-content: space-between;
 
-    color: #333; /* Un gris oscuro para el texto */
+    color: #757575; /* Un gris oscuro para el texto */
 }
  
 /* Text Section */
 .scl-textSection {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     max-width: 40%; /* Ajusta esto según el diseño */
 
-    margin: 0 2rem 0 2rem;
+    margin: 0 3rem 0 3rem;
 }
 .scl-textSection h1 {
     font-size: 1.7rem; /* Tamaño grande para el título */
@@ -20,10 +20,11 @@
     margin-bottom: 1rem; /* Espacio después del título */
     border-bottom: 3px solid black; /* Línea debajo del título */
     padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+    color: #333;
 }
 
 .scl-textSection p {
-    font-size: 0.8rem; /* Tamaño estándar para el texto */
+    font-size: 0.95rem; /* Tamaño estándar para el texto */
     line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
     margin-bottom: 1rem; /* Espacio entre párrafos */
     text-align: justify;
@@ -49,7 +50,7 @@
 .scl-button {
     background-color: #E62200;
     color: white;
-    padding: 0.8rem 2rem;
+    padding: 0.6rem 1rem;
     border: none;
     border-radius: 999px;
     cursor: pointer;
@@ -68,6 +69,37 @@
 .scl-arrow-icon {
     margin-left: 0.5rem;
     animation: slide 1s infinite;
+}
+
+
+
+@media only screen and (min-width: 901px) and (max-width: 1200px),
+       only screen and (min-width: 601px) and (max-width: 900px) {
+
+
+
+    .scl-blocks {
+        display: flex;
+        flex-direction: column-reverse; /* Asegurar dirección en columna */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .scl-block {
+        width: 100%; /* Establece el ancho de cada bloque al 100% */
+        margin: 1rem 0; /* Espacio arriba y abajo para cada bloque */
+    }
+
+    .scl-textSection {
+        max-width: 100%; 
+        margin: 1rem 3; 
+    }
+
+    
+    .scl-imageSection {
+        
+        max-width: 100%; 
+        margin: 1rem 0;
+    }
 }
 
 

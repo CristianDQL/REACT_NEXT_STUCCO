@@ -203,7 +203,7 @@ export const splitScreenData1 = {
     "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project.",
     "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
   ],
-  buttonText: "See More >>",
+  buttonText: "See More",
   buttonLink: "#",
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"

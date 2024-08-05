@@ -1,32 +1,38 @@
 import React from 'react';
-import './SplitScreenR.css';
+import './SplitScreenL.css';
 import Image from 'next/image';
 
-import { splitScreenData1 } from '@/src/utils/data'
+/* import { splitScreenData1 } from '@/src/utils/data' */
 
-const SplitScreenR = () => {
+const SplitScreenL = ({ data }) => {
   return (
-    <div className="scr-wrapper">
+    <div className="scl-wrapper">
       <div className="container">
-        <div className="scr-container">
-          <div className="scr-textSection">
-            <h1>{splitScreenData1.title}</h1>
-            {splitScreenData1.paragraphs.map((paragraph, index) => (
+        <div className="scl-container">
+
+          {/* IMage Section */}
+          <div className="scl-imageSection">
+            <Image src={data.imageUrl} alt={data.imageAlt} layout="fill" objectFit="cover" />
+          </div>
+
+          {/* Text Section */}
+          <div className="scl-textSection">
+            <h1>{data.title}</h1>
+            {data.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-            <div className="scr-button-container">
-              <button className="scr-button">
-                {splitScreenData1.buttonText}
+            <div className="scl-button-container">
+              <button className="scl-button">
+                {data.buttonText}<span className="arrow-icon">{">>"}</span>
               </button>
             </div>
           </div>
-          <div className="scr-imageSection">
-            <Image src={splitScreenData1.imageUrl} alt={splitScreenData1.imageAlt} layout="fill" objectFit="cover" />
-          </div>
+
+          
         </div>
       </div>
     </div>
   );
 };
 
-export default SplitScreenR;
+export default SplitScreenL;
