@@ -82,6 +82,11 @@
 }
 
 
+
+
+
+
+
 @media (min-width: 1200px) {
     .h-wrapper .container {
         max-width: 100%;
@@ -89,7 +94,7 @@
     }
 
     .h-container {
-        height: 500px;
+        height: 31.25rem;
         overflow: hidden;
     }
 
@@ -100,7 +105,7 @@
 
     .project-image {
         width: 100%;
-        height: 100%; /* Ajuste para usar toda la altura del contenedor */
+        height: 31.25rem; /* Ajuste para usar toda la altura del contenedor */
         object-fit: contain;/* Cambio a 'cover' para asegurar que la imagen cubra todo el espacio */
     }
 
@@ -115,5 +120,8 @@
         font-size: 1rem; /* Ajuste del tamaño de los puntos */
     }
 }
+    
 
+    
 
+    

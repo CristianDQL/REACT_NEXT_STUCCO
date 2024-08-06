@@ -40,6 +40,13 @@ const Hero = () => {
                             
                             
                         />
+                        {/* <Image
+                            src={item.icon}
+                            className="project-image"
+                            alt="Portfolio"
+                            layout="fill" // Esto hace que la imagen ocupe todo el contenedor
+                            objectFit="cover" // Asegura que la imagen cubra el contenedor completo
+                        /> */}
                         
                         
                     </div>
