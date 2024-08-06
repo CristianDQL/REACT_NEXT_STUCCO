@@ -28,20 +28,20 @@ const Footer = () => {
             <div className="f-company-info">
               <span className="info-title">COMPANY INFO</span>
               <span>1868 Pacific Ave,</span>
-              <span>Long Beach, CA 90806</span>
-              <span>(562) 679-4699</span>
-              <span>(877) 410-3408</span>
-              <span>info@stuccoboy.com</span>
+              <span>Miramar, MI 2000</span>
+              <span>(555) 679-2953</span>
+              
+              <span>info@optimum.com</span>
             </div>
             <div className="f-office-hours">
               <span className="info-title">OFFICE HOURS</span>
               <span>Mon-Fri: 8:00 am-5:00 pm</span>
               <span>Sat: 8:00 am-5:00 pm</span>
-              <span>Sun: closed</span>
+              
             </div>
           </div>
 
-          <span className="f-creator-text">Made with ❤️ by Artilino</span>
+          {/* <span className="f-creator-text">Made with ❤️ by Artilino</span> */}
         </div>
       </div>
     </div>

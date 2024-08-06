@@ -1,11 +1,13 @@
-.f-wrapper .container {
+/* .f-wrapper .container {
   margin-top: 2rem;
+  margin: 0 2rem 0 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
+} */
 
 .f-wrapper {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(53, 53, 53);
+  
 }
 
 .f-container {
@@ -13,6 +15,8 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+
+  margin: 0 2rem 0 2rem;
 }
 
 .f-button-container {
@@ -61,14 +65,19 @@
   color: white;
   text-align: left;
   padding: 0 10%; /* Adjust padding to center columns */
+
+  margin-bottom: 2rem;
+  
 }
 
 .f-company-info, .f-office-hours {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 9rem;
+  padding-right: 10rem;
+
+  margin-bottom: 1rem;
 }
 
 .info-title {
@@ -76,21 +85,24 @@
   margin-bottom: 0.5rem;
 }
 
-.f-creator-text {
+/* .f-creator-text {
   color: rgb(255, 255, 255);
-  font-size: 0.8rem; /* Reduce the font size */
+  font-size: 0.8rem; 
 }
-
+ */
 @media (max-width: 990px) {
   .f-menu {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+
+    padding: 0rem;
+    margin: 0;
   }
 
   .f-info {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     text-align: center;
     padding: 0; /* Remove padding for smaller screens */
