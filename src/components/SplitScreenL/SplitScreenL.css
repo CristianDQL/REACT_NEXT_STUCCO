@@ -70,10 +70,12 @@
     display: inline-flex;
     align-items: center;
     transition: background-color 0.5s ease;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Added shadow */
 }
   
 .scl-button:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     transform: translateY(-2px);
     background-color: #650100;
     color: #ffffff;

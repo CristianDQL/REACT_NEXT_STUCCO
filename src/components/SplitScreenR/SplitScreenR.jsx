@@ -17,7 +17,7 @@ const SplitScreenR = ({ data }) => {
             {/* IMage Section */}
             
               <div className="scr-imageSection">
-                <Image src={data.imageUrl} alt={data.imageAlt} layout="fill" objectFit="cover" />
+                <Image src={data.imageUrl} alt={data.imageAlt} fill style={{ objectFit: "cover" }} />
               </div>
             
 

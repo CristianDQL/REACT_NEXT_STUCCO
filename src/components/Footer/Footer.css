@@ -13,17 +13,13 @@
 .f-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 
-  margin: 0 2rem 0 2rem;
+  margin: 0 1rem 0 2rem;
 }
 
-.f-button-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+
 
 .f-container .title {
   color: white;
@@ -41,7 +37,7 @@
 .f-menu {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   flex-wrap: wrap;
 }
 

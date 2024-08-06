@@ -79,11 +79,11 @@
 .cu-button-container {
     margin-top: 1rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0 0 2rem 0;
 }
   
 .cu-button {
-    background-color: #E62200;
+    background-color: #E62200; /* #E62200 */
     color: white;
     padding: 0.6rem 1rem;
     border: none;
@@ -93,10 +93,13 @@
     display: inline-flex;
     align-items: center;
     transition: background-color 0.5s ease;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Added shadow */
+
 }
   
 .cu-button:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     transform: translateY(-2px);
     background-color: #650100;
     color: #ffffff;

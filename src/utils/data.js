@@ -203,7 +203,7 @@ export const splitScreenData1 = {
     /* "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project." */
     "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
   ],
-  buttonText: "See More",
+  buttonText: "Our Journey",
   buttonLink: "#",
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"
@@ -216,7 +216,7 @@ export const splitScreenData2 = {
     
     
   ],
-  buttonText: "See More",
+  buttonText: "Our Process",
   buttonLink: "#",
   imageUrl: "/Services/2.jpg",
   imageAlt: "Luxury Home Interior"
@@ -228,7 +228,7 @@ export const splitScreenData3 = {
     "With vast experience in diverse residential projects, we work closely with homeowners to meet their vision. Choose Optimum Stucco Inc. for durable, sophisticated stucco that protects and beautifies your home, adding curb appeal and sophistication."
     
   ],
-  buttonText: "See More",
+  buttonText: "Our Technique",
   buttonLink: "#",
   imageUrl: "/services/luxury-home.jpg",
   imageAlt: "Luxury Home Interior"
@@ -240,7 +240,7 @@ export const splitScreenData4 = {
     "EIFS is a popular choice for homeowners seeking superior insulation and a sleek finish. Our skilled team installs EIFS with precision, providing excellent thermal performance and moisture control while offering versatile design options. Trust Optimum Stucco Inc. to deliver high-quality, energy-efficient solutions that elevate the look and comfort of your home."
     
   ],
-  buttonText: "See More",
+  buttonText: "Our Formula",
   buttonLink: "#",
   imageUrl: "/Services/EIFS.png",
   imageAlt: "eifs treatment"

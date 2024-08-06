@@ -47,7 +47,7 @@ const Portfolio = () => {
 
           <div className="port-button-container ">
             <button className="port-button ">
-              See More <span className="port-arrow-icon ">{">>"}</span>
+              Our Projects<span className="port-arrow-icon ">{">>"}</span>
             </button>
           </div>
         </div>
