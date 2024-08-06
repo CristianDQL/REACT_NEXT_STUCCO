@@ -56,7 +56,7 @@
 }
 
 
-/* PRUEBA */
+
 
 /* Opciones para personalizar los puntos de navegación */
 .h-slider-container .slick-dots {
@@ -82,4 +82,38 @@
 }
 
 
-/* DOTS CENTRADOS EN MOVIL??? */
+@media (min-width: 1200px) {
+    .h-wrapper .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .h-container {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    /* Ajuste de la altura del contenedor del Hero para que ocupe el espacio restante */
+    .h-container, .h-slider-container .slick-list {
+        height: 95vh; /* altura del Viewport */
+    }
+
+    .project-image {
+        width: 100%;
+        height: 100%; /* Ajuste para usar toda la altura del contenedor */
+        object-fit: contain;/* Cambio a 'cover' para asegurar que la imagen cubra todo el espacio */
+    }
+
+    .h-slider-container .slick-dots {
+        position: absolute;
+        bottom: -40px; /* Ajusta para que queden dentro de la vista */
+        left: 50%; /* Centra los dots horizontalmente */
+        transform: translateX(-50%); /* Alineación precisa al centro */
+    }
+
+    .h-slider-container .slick-dots li button:before {
+        font-size: 1rem; /* Ajuste del tamaño de los puntos */
+    }
+}
+
+
