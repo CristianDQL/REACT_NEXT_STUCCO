@@ -287,48 +287,67 @@ export const titlePortfolioData = {
 export const portfolioData = [
   {
     icon: "/Services/luxury-home.jpg",
-    title: "Stucco Repair"
+    title: "Brickell Bay Drive",
+    desc: "Optimum Residential"
     
   },
   {
     icon: "/Services/luxury-home-2.jpg",
-    title: "Re-Stucco"
+    title: "Pan American Drive",
+    desc: "Optimum Residential"
   },
   {
     icon: "/Services/luxury-home-3.jpg",
-    title: "Stucco Patching"
+    title: "Tiger Tail Avenue",
+    desc: "Optimum Residential"
   },
   {
     icon: "/Services/luxury-home-5.jpg",
-    title: "Stucco Patching"
+    title: "NE 4th Court",
+    desc: "Optimum Residential"
   },
   {
     icon: "/Services/2.jpg",
-    title: "Stucco Patching"
+    title: "Prairie Avenue",
+    desc: "Optimum Commercial"
   },
   {
     icon: "/Services/luxury-home.jpg",
-    title: "Stucco Repair"
+    title: "Brickell Bay Drive",
+    desc: "Optimum Residential"
     
   },
   {
     icon: "/Services/luxury-home-2.jpg",
-    title: "Re-Stucco"
+    title: "Pan American Drive",
+    desc: "Optimum Residential"
   },
   {
     icon: "/Services/2.jpg",
-    title: "Stucco Patching"
+    title: "Prairie Avenue",
+    desc: "Optimum Commercial"
   },
   {
     icon: "/Services/luxury-home.jpg",
-    title: "Stucco Repair"
+    title: "Brickell Bay Drive",
+    desc: "Optimum Residential"
     
   },
   
   {
     icon: "/Services/luxury-home-2.jpg",
-    title: "Re-Stucco"
+    title: "Pan American Drive",
+    desc: "Optimum Residential"
   },
-  
+  {
+    icon: "/Services/luxury-home-3.jpg",
+    title: "Tiger Tail Avenue",
+    desc: "Optimum Residential"
+  },
+  {
+    icon: "/Services/luxury-home-5.jpg",
+    title: "NE 4th Court",
+    desc: "Optimum Residential"
+  },
   
 ];

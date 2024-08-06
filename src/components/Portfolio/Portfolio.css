@@ -16,7 +16,7 @@
 /* Grid container */
 .port-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 1rem;
     margin: 2rem 2rem 0rem 2rem;
 
@@ -56,6 +56,13 @@
     width: 80%; /* Ajusta esto según necesites */
 
     z-index: 2; /* Asegura que el texto esté encima de la capa oscura */
+}
+/* Additional styling for the new description element */
+.project-desc {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    color: white; /* Color para diferenciar la descripción del título */
+    font-weight: bold;
 }
 
 /* Hover effects */
@@ -149,6 +156,10 @@
     .port-head .title {
         max-width: 100%;
     }
+    
+    .port-grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 3 columns for medium screens */
+    }
 }
 
 @media (max-width: 768px) {
@@ -163,4 +174,9 @@
         padding-top: 3rem; 
     }
     
+}
+@media (max-width: 576px) {
+    .port-grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
+    }
 }

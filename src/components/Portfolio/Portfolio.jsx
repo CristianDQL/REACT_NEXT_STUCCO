@@ -38,6 +38,7 @@ const Portfolio = () => {
                 />
                 <div className="project-info">
                   <h3 className="project-title">{item.title}</h3>
+                  {item.desc && <p className="project-desc">{item.desc}</p>}
                   
                 </div>
               </div>
