@@ -8,9 +8,9 @@ const Footer = () => {
     <div className="f-wrapper">
       <div className="container">
         <div className="f-container">
-          <div className="f-button-container">
+          {/* <div className="f-button-container">
             <Button />
-          </div>
+          </div> */}
 
           <hr/>
 

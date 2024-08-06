@@ -351,3 +351,23 @@ export const portfolioData = [
   },
   
 ];
+/* CONTACT US */
+export const contactUsData = [
+  {
+    icon: "/howItWorks/Frame-0.png",
+    title: "Connect",
+    des: "At Optimum Stucco, we are dedicated to providing top-tier stucco services for residential and commercial properties in Miami. Our team of experts ensures exceptional results that enhance the beauty and durability of your property. With diligent planning, high-quality materials, and meticulous craftsmanship, we bring your vision to life efficiently and effectively.",
+  },
+  {
+    icon: "/howItWorks/Frame-1.png",
+    title: "Optimum Services",
+    des: "Elevate your property with our unparalleled stucco solutions. Contact us to experience the sophistication and precision that Optimum Stucco delivers. Our commitment to excellence and attention to detail ensures a seamless and distinguished transformation for your home or business. Trust us to enhance your property's value and aesthetic appeal with the highest standards of luxury and quality. Your premier choice for elite stucco services in Miami and surrounding areas."
+  },
+];
+export const contactUsTitleData = {
+  tag: "Contact Us",
+  title: "",
+  description: ""
+};
+
+ 

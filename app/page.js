@@ -10,7 +10,7 @@ import BrandingVideo from '@/src/components/BrandingVideo/BrandingVideo';
 import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
 import OurDiff from '@/src/components/Portfolio/OurDiff';
 import { motion, unseAnimation, useAnimation  } from "framer-motion";
-import HowItWorks from '@/src/components/HowItWorks/HowItWorks';
+/* import HowItWorks from '@/src/components/ContactUs/HowItWorks'; */
 import WhoWeInvest from '@/src/components/WhoWeInvest/WhoWeInvest';
 import Testimonials from '@/src/components/Testimonials/Testimonials';
 import Footer from '@/src/components/Footer/Footer';
@@ -26,6 +26,7 @@ import { titleServicesData } from '@/src/utils/data';
 import { servicesData } from '@/src/utils/data';
 import VerticalSlider from '@/src/components/VerticalSlider/VerticalSlider';
 import Services from '@/src/components/Services/Services';
+import ContactUs from '@/src/components/ContactUs/ContactUs';
 
 export default function Home() {
 
@@ -37,8 +38,9 @@ export default function Home() {
     <motion.div className="app" animate={controls}>
       <Navbar/>
       <Hero/>
-            
       <Services/>
+      <Portfolio/>
+      <ContactUs/>
       {/* <SplitScreenL data={splitScreenData1}/>
       <VerticalSlider features={servicesData} /> */}
 
@@ -65,9 +67,9 @@ export default function Home() {
       >
         <Portfolio/>
       </motion.div> */}
-      <Portfolio/>
+      
 
-      <AboutUs/>
+      {/* <AboutUs/> */}
 
       
       {/* <motion.div
@@ -85,9 +87,9 @@ export default function Home() {
       >
         <Testimonials/>
       </motion.div> */}
-      <Testimonials/>
+      {/* <Testimonials/> */}
       
-      <HowItWorks/>
+      
 
       <Footer/>
 

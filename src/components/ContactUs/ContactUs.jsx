@@ -1,11 +1,12 @@
  import React from 'react'
-import './HowItWorks.css'
-import { hitFeatures } from '@/src/utils/data'
+import './ContactUs.css'
+import { contactUsTitleData, contactUsData } from '@/src/utils/data'
 import Image from 'next/image'
 import { motion } from "framer-motion";
 import { tagVariants, titleVariants } from '@/src/utils/animation';
+import Title from '../Title/Title';
 
-const HowItWorks = () => {
+const ContactUs = () => {
     const featureVariants = {
         offscreen: {
             scale: 0.5
@@ -21,12 +22,17 @@ const HowItWorks = () => {
 
   return (
 
-    <div className="hiw-wrapper">
+    <div className="cu-wrapper">
         <div className="container">
-            <div className="hiw-container">
+            <div className="cu-container">
 
                 {/* Head */}
-                <div className="hiw-head">
+                <Title 
+                    tag={contactUsTitleData.tag} 
+                    title={contactUsTitleData.title} 
+                    description={contactUsTitleData.description} 
+                />
+                {/* <div className="hiw-head">
                     <motion.span 
                         variants={tagVariants}
                         initial="offscreen"
@@ -44,17 +50,17 @@ const HowItWorks = () => {
                         Ready to Schedule your Free Estimate?
                     </motion.span>
                     
-                </div>
+                </div> */}
 
                 {/* Features - from data.js*/}
-                <div className="hiw-features">
+                <div className="cu-features">
                     {
-                        hitFeatures.map((feature, i)=> (
+                        contactUsData.map((feature, i)=> (
                             <motion.div 
                                 variants={featureVariants}
                                 initial="offscreen"
                                 whileInView={"onscreen"}
-                                className="hiw-feature" 
+                                className="cu-feature" 
                                 key={i}
                             >
                                 {/* Left side */}
@@ -71,26 +77,24 @@ const HowItWorks = () => {
                                      }}
 
                                     className="detail">
-                                    <span className='des'>0{i+1}</span>
-                                    <span className='sec-title'>{feature.title}</span>
-                                    <span className='text'>{feature.des} </span>
+                                    {/* <span className='des'>0{i+1}</span> */}
+                                    <span className='cu-title'>{feature.title}</span>
+                                    <span className='cu-text'>{feature.des} </span>
                                 </motion.div>
 
-                                {/* Right side */}
-                                <div className="icon">
-                                    <Image 
-                                        src={feature.icon} 
-                                        width={128} 
-                                        height={128} 
-                                        alt='feature '
-                                        style={{translate: "50% 0rem"}}
-                                    />
-                                </div>
+                                
                             </motion.div>
                         ))
 
                     }
 
+                </div>
+
+
+                <div className="cu-button-container ">
+                    <button className="cu-button ">
+                        Get Started <span className="cu-arrow-icon ">{">>"}</span>
+                    </button>
                 </div>
 
 
@@ -102,4 +106,4 @@ const HowItWorks = () => {
   )
 }
 
-export default HowItWorks
+export default ContactUs

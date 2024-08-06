@@ -1,0 +1,197 @@
+.cu-wrapper {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cu-head {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    max-width: 35rem;
+    margin: auto;
+}
+
+/* Features */
+.cu-features {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    align-items: center; 
+}
+
+.cu-feature {
+    max-width: 38rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-bg);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    width: 100%; /* Ensure the width is 100% */
+    box-shadow: var(--shadow); /* Add box-shadow */
+}
+
+.cu-feature .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    translate: -18% 0rem;
+}
+
+.cu-feature .detail>:nth-child(1) {
+    font-size: 1.7rem; /* Tamaño grande para el título */
+    font-weight:500; /* Texto en negrita para el título */
+    margin-bottom: 1rem; /* Espacio después del título */
+    /* border-bottom: 3px solid black;  Línea debajo del título  */
+    padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+    color: #333;
+}
+.cu-feature .detail>:nth-child(2) {
+    font-size: 0.95rem; /* Tamaño estándar para el texto */
+    line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
+    margin-bottom: 1rem; /* Espacio entre párrafos */
+    text-align: justify;
+    color: #7a7a7a;
+
+
+    word-wrap: break-word; /* Forzar el texto a ajustarse dentro del contenedor */
+}
+
+/* Adjust feature alignment */
+.cu-feature:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.cu-feature:nth-of-type(1),
+.cu-feature:nth-of-type(3) {
+    margin-right: auto;
+}
+
+/* Button */
+.cu-button-container {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+  
+.cu-button {
+    background-color: #E62200;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+  
+.cu-button:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    background-color: #650100;
+    color: #ffffff;
+}
+.cu-arrow-icon {
+    margin-left: 0.5rem;
+    animation: slide 1s infinite;
+}
+
+
+/* Responsive Design */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cu-feature {
+        max-width: 80%;
+        margin: auto;
+    }
+    .cu-feature:nth-of-type(2) {
+        margin-left: auto;
+    }
+    .cu-feature:nth-of-type(1),
+    .cu-feature:nth-of-type(3) {
+        margin-right: auto;
+    }
+    .cu-feature .detail {
+        translate: 0;
+    }
+    .cu-feature .icon img {
+        translate: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .cu-feature {
+        max-width: 80%;
+        margin: auto;
+    }
+    .cu-feature .detail {
+        translate: 0;
+    }
+    .cu-feature .icon img {
+        translate: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    
+    .cu-feature {
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .cu-feature .detail {
+        align-items: center;
+        text-align: center;
+
+        padding-right: -1rem;
+        padding-left: 1rem;
+        margin: 0 0rem 0 1rem;
+
+    }
+    .cu-feature .detail>:nth-child(1) {
+        font-size: 1.4rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+        padding-left: 8rem;
+    }
+    .cu-feature .detail>:nth-child(2) {
+        font-size: 0.9rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+        padding-left: 7rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .cu-container {
+        padding: 0 1.5rem;
+    }
+    .cu-feature {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .cu-feature .detail {
+        align-items: center;
+        text-align: center;
+
+        padding-right: -1rem;
+        padding-left: 2.8rem;
+        margin: 0 0rem 0 3rem;
+
+    }
+    .cu-feature .icon img {
+        translate: 0;
+    }
+}
