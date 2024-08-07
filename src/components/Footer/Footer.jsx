@@ -29,9 +29,9 @@ const Footer = () => {
               <span className="info-title">COMPANY INFO</span>
               <span>1868 Pacific Ave,</span>
               <span>Miramar, MI 2000</span>
-              <span>(555) 679-2953</span>
+              <span>(786) 487-5772</span>
               
-              <span>info@optimum.com</span>
+              <span>optimumstuccoinc@gmail.com</span>
             </div>
             <div className="f-office-hours">
               <span className="info-title">OFFICE HOURS</span>
