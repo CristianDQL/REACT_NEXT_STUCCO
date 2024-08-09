@@ -36,11 +36,11 @@ export default function Home() {
 
   return (
     <motion.div className="app" animate={controls}>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       <Services/>
       <Portfolio/>
-      <ContactUs/>
+      {/* <ContactUs/> */}
       {/* <SplitScreenL data={splitScreenData1}/>
       <VerticalSlider features={servicesData} /> */}
 
@@ -91,7 +91,7 @@ export default function Home() {
       
       
 
-      <Footer/>
+      {/* <Footer/> */}
 
     </motion.div>
   );

@@ -1,6 +1,10 @@
+import Navbar from "@/src/components/Navbar/Navbar";
 import "./globals.css";
+/* import '@/app/ui/global.css'; */
 // forma de importar Fonts en Next
 import {Josefin_Sans} from 'next/font/google';
+import Footer from "@/src/components/Footer/Footer";
+/* import { Josef } from '@/app/ui/fonts'; */
 
 export const metadata = {
   title: "Optimum Stucco INC",
@@ -16,6 +20,7 @@ const Josef = Josefin_Sans({
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="en">
 
       {/* Links para el SlickSlider carrousel */}
@@ -26,14 +31,20 @@ export default function RootLayout({ children }) {
       
       <body className={Josef.className}>
 
-        {/* <Navbar /> */} {/* PARA TODAS LAS PÁGINAS. */}
-        
+        <Navbar/> 
         {children}
+        
+      </body>
+      <Footer/>  {/* AL no ser el page.jsx, teniendo html, no sale al fondo, comprobar tras agregar más código. */}
 
-        {/* <Footer /> */}
-        
-        
-        </body>
+      {/* antialiased es una clase tailwind, que he recreado en global.css, no sé si funciona correctamente */}
+      {/* <body className={`${Josef.className} antialiased`}>{children}</body>
+      */}
+
+      
     </html>
   );
 }
+
+
+
