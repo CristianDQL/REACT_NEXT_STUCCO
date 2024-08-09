@@ -22,7 +22,7 @@ const links = [
       name: 'Services', href: '/services'
     },
     { name: 'Portfolio', href: '/portfolio'},
-    { name: 'Contact', href: '/contact'},
+    { name: 'Details', href: '/details'},
   ];
 
  
@@ -128,12 +128,8 @@ const Navbar = () => {
 
             {/*Mobile Menu*/}
             <div className="nm-menu" style={{transform: mobileMenuOpened && "translateX(0%)"}}> {/*El style es para que se vea con el click*/}
-                {/* Sin autoscrolling */}
-                {/* <span>Services</span>
-                <span>Portfolio</span>
-                <span>Details</span>
-                <span>Contact Us </span> */}
-                <Link 
+                
+                {/* <Link 
                     onClick={() => setMobileMenuOpened(false)}
                     to="wwd-wrapper"
                     spy={true}
@@ -166,7 +162,22 @@ const Navbar = () => {
                     offset={100}
                 >
                     <span>DETAILS</span>
-                </Link>
+                </Link> */}
+
+
+
+                    {links.map((link) => (
+                        <Link 
+                            key={link.name} 
+                            href={link.href}
+                            
+                            className={clsx('link-style', { 'active-link': pathname === link.href })}
+                            onClick={() => setMobileMenuOpened(false)}
+                        >
+                                <p className="hidden md:block">{link.name}</p>
+                            
+                        </Link>
+                    ))}
                 <div className="m-funded-button">Contact Us</div>
 
 

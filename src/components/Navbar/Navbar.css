@@ -139,10 +139,7 @@
     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
 }
 
-.n-menu span:hover {
-    background-color: #00000000; /* Cambia esto según tu paleta de colores */
-    color: #E62200; /* Cambia el color del texto en hover */
-}
+
 
 
 
@@ -194,13 +191,17 @@
     color: #000000; /* Color por defecto de los enlaces */
     text-decoration: none; /* Elimina el subrayado */
     transition: color 0.3s, background-color 0.3s; /* Transiciones suaves para color y fondo */
-  }
+}
+.link-style:hover {
+    background-color: #00000000; /* Cambia esto según tu paleta de colores */
+    color: #E62200; /* Cambia el color del texto en hover */
+}
   
   /* Estilo para el enlace activo */
-  .active-link {
+.active-link {
     color: red; /* Cambia solo el color del texto a rojo para el enlace activo */
     
-  }
+}
 
 
 
