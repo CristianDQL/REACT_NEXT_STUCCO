@@ -184,10 +184,28 @@
 } */
 
 
+
+/* ESTILO PARA LINKS */
+/* Estilo base para todos los enlaces de la navbar */
+.link-style {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #000000; /* Color por defecto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s, background-color 0.3s; /* Transiciones suaves para color y fondo */
+  }
+  
+  /* Estilo para el enlace activo */
+  .active-link {
+    color: red; /* Cambia solo el color del texto a rojo para el enlace activo */
+    
+  }
+
+
+
+
 /* Responsive Design */
-
-
-
 
 
 /* Versión Móvil */
