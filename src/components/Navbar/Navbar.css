@@ -187,7 +187,7 @@
 .link-style {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
+    /* padding: 1px 15px; */
     color: #000000; /* Color por defecto de los enlaces */
     text-decoration: none; /* Elimina el subrayado */
     transition: color 0.3s, background-color 0.3s; /* Transiciones suaves para color y fondo */
@@ -247,12 +247,13 @@
 
     .nm-container>:nth-child(1){ /*Afecta al primer child de ese contenedor*/
         font-weight: bold;
+        
     }
 
     .nm-menu{
         position: fixed;
         top: 4.1rem;
-        padding: 3rem 2rem;
+        padding: 1rem 2rem;
         box-sizing: border-box;
         left: 0;
         display: flex;
@@ -269,8 +270,8 @@
 
     /*Span del menú hamburguesa, divisiones entre submenús - CAMBIARRRRRRRRRR----*/
     .nm-menu a{
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
         border-bottom: 1px solid black;/* var(--border-color) */;
 
         display: block; /* Asegura que el enlace ocupe todo el espacio horizontal para facilitar la interacción */
@@ -293,6 +294,7 @@
         padding: 1rem 0rem;
         border-radius: 999px;
         color : rgb(0, 0, 0);/* var(--dark-bg); */
+        margin-top: 1rem;
 
         transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
     }      
@@ -381,8 +383,8 @@
 
     /*Span del menú hamburguesa, divisiones entre submenús - CAMBIARRRRRRRRRR----*/
     .nm-menu a{
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
         
 
         display: block; /* Asegura que el enlace ocupe todo el espacio horizontal para facilitar la interacción */

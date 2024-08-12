@@ -3,9 +3,9 @@
 //HOME PAGE
 
 //Escribiendo el componente dentro del div, directamente hace las importaciones
-import Navbar from '@/src/components/Navbar/Navbar';
+/* import Navbar from '@/src/components/Navbar/Navbar';
+ */
 import './page.css'
-import Hero from '@/src/components/Hero/Hero';
 import BrandingVideo from '@/src/components/BrandingVideo/BrandingVideo';
 import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
 import OurDiff from '@/src/components/Portfolio/OurDiff';
@@ -27,6 +27,7 @@ import { servicesData } from '@/src/utils/data';
 import VerticalSlider from '@/src/components/VerticalSlider/VerticalSlider';
 import Services from '@/src/components/Services/Services';
 import ContactUs from '@/src/components/ContactUs/ContactUs';
+import Hero from '@/src/components/Hero/Hero';
 
 export default function Home() {
 
@@ -40,57 +41,8 @@ export default function Home() {
       <Hero/>
       <Services/>
       <Portfolio/>
-      {/* <ContactUs/> */}
-      {/* <SplitScreenL data={splitScreenData1}/>
-      <VerticalSlider features={servicesData} /> */}
-
-
-      {/* Fin Services */}
-
-
-      {/* <BrandingVideo/>  */}
-      {/* <WhatWeDo/>  */}
-
-      {/* MODIFICAR cambio de color entre secciones, a rojo? */}
-      {/* <motion.div
-        onViewportEnter={() =>
-          controls.start({
-            backgroundColor: "rgb(203, 203, 203)",
-          })
-        }
-        onViewportLeave={() =>
-          controls.start({
-            backgroundColor: "white",
-          })
-        }
-        viewport={{amount: 0.4}} 
-      >
-        <Portfolio/>
-      </motion.div> */}
+      <ContactUs/>
       
-
-      {/* <AboutUs/> */}
-
-      
-      {/* <motion.div
-        onViewportEnter={() =>
-          controls.start({
-            backgroundColor: "rgb(203, 203, 203)",
-          })
-        }
-        onViewportLeave={() =>
-          controls.start({
-            backgroundColor: "white",
-          })
-        }
-        viewport={{amount: 0.4}} 
-      >
-        <Testimonials/>
-      </motion.div> */}
-      {/* <Testimonials/> */}
-      
-      
-
       {/* <Footer/> */}
 
     </motion.div>

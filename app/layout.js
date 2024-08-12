@@ -1,9 +1,11 @@
-import Navbar from "@/src/components/Navbar/Navbar";
+
 import "./globals.css";
 /* import '@/app/ui/global.css'; */
 // forma de importar Fonts en Next
 import {Josefin_Sans} from 'next/font/google';
-import Footer from "@/src/components/Footer/Footer";
+
+import Navbar from "../src/components/Navbar/Navbar";
+import Footer from "../src/components/Footer/Footer";
 /* import { Josef } from '@/app/ui/fonts'; */
 
 export const metadata = {
@@ -33,9 +35,11 @@ export default function RootLayout({ children }) {
 
         <Navbar/> 
         {children}
+
+        <Footer/>
         
       </body>
-      <Footer/>  {/* AL no ser el page.jsx, teniendo html, no sale al fondo, comprobar tras agregar más código. */}
+        {/* AL no ser el page.jsx, teniendo html, no sale al fondo, comprobar tras agregar más código. */}
 
       {/* antialiased es una clase tailwind, que he recreado en global.css, no sé si funciona correctamente */}
       {/* <body className={`${Josef.className} antialiased`}>{children}</body>

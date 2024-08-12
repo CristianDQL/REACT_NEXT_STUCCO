@@ -7,22 +7,23 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { RxCross2 } from 'react-icons/rx';
 import { motion, useMotionValueEvent, useScroll } from "framer-motion"; /* Sticky menu */
 
-import Image from 'next/image';
+
 
 /* links */
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-    { name: 'Home', href: '/'},
+    { name: 'HOME', href: '/'},
     {
-      name: 'Services', href: '/services'
+      name: 'SERVICES', href: '/services'
     },
-    { name: 'Portfolio', href: '/portfolio'},
-    { name: 'Details', href: '/details'},
+    { name: 'PORTFOLIO', href: '/portfolio'},
+    { name: 'DETAILS', href: '/details'},
   ];
 
  
@@ -60,7 +61,20 @@ const Navbar = () => {
                 {/*Dos secciones para el navbat*/}
                 {/*Left side */}
                 <div className="n-logo">
-                 <img src="NavBar/optimum-stucco-services-logo.svg" alt="LOGO"  />
+                    <Link href="/" >
+                        
+                        <Image 
+                            src="/NavBar/optimum-stucco-services-logo.svg" 
+                            alt="Optimum Stucco INC, Specializing in Residential and Commercial Stucco Applications" 
+                            width={200} 
+                            height={60} 
+                            layout="fixed" 
+                        />
+                        
+                    </Link>
+                    
+                    
+                    
                 </div>
 
                 {/*Right side*/}
@@ -81,23 +95,6 @@ const Navbar = () => {
                             <p className="hidden md:block">{link.name}</p>
                         </Link>
                     ))}
-
-
-
-
-
-                        {/* <Link to="wwd-wrapper" spy={true} smooth={true}>
-                            <span>HOME</span>
-                        </Link>
-                        <Link to="hiw-wrapper" spy smooth offset={100}>
-                            <span>SERVICES</span>
-                        </Link>
-                        <Link to="wwi-wrapper" spy smooth >
-                            <span>PORTFOLIO</span>
-                        </Link>
-                        <Link to="t-wrapper" spy smooth offset={100}>
-                            <span>DETAILS </span>
-                        </Link> */}
                         
                     </div>
                     <div className="fund-button">CONTACT US</div>
@@ -114,7 +111,17 @@ const Navbar = () => {
         <div className="nm-container">
             {/*Logo*/}
             <div className="nm-logo">
-              <img  src="NavBar/optimum-stucco-services-logo.svg" alt="LOGO1"  />
+                <Link href="/" >
+                            
+                            <Image 
+                                src="/NavBar/optimum-stucco-services-logo.svg" 
+                                alt="Optimum Stucco Services, Specializing in Residential and Commercial Stucco Applications" 
+                                width={200} 
+                                height={60} 
+                                layout="fixed" 
+                            />
+                            
+                        </Link>
             </div>
            
 
@@ -128,44 +135,7 @@ const Navbar = () => {
 
             {/*Mobile Menu*/}
             <div className="nm-menu" style={{transform: mobileMenuOpened && "translateX(0%)"}}> {/*El style es para que se vea con el click*/}
-                
-                {/* <Link 
-                    onClick={() => setMobileMenuOpened(false)}
-                    to="wwd-wrapper"
-                    spy={true}
-                    smooth={true}
-                >
-                    <span>HOME</span>
-                </Link>
-                <Link
-                    onClick={() => setMobileMenuOpened(false)}
-                    to="hiw-wrapper"
-                    spy
-                    smooth
-                    offset={100}
-                >
-                    <span>SERVICES</span>
-                </Link>
-                <Link 
-                    onClick={() => setMobileMenuOpened(false)}
-                    to="wwi-wrapper"
-                    spy
-                    smooth
-                >
-                    <span>PORTFOLIO</span>
-                </Link>
-                <Link
-                    onClick={() => setMobileMenuOpened(false)}
-                    to="t-wrapper"
-                    spy
-                    smooth
-                    offset={100}
-                >
-                    <span>DETAILS</span>
-                </Link> */}
-
-
-
+    
                     {links.map((link) => (
                         <Link 
                             key={link.name} 
