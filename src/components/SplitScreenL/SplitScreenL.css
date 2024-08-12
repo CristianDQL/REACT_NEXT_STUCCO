@@ -47,11 +47,18 @@
     flex: 1;
     position: relative;
     height:30rem; /* Ajusta la altura según sea necesario */
-
     max-width: 40%;
     margin: 0 5rem 0 1rem;
-}
 
+    overflow: hidden; /* Esconde cualquier parte de la imagen que se desplace fuera del contenedor */
+    transform: translateY(100px); /* Inicia la imagen fuera de pantalla hacia abajo */
+    opacity: 0; /* Inicia la imagen completamente transparente */
+    transition: transform 1s ease-out, opacity 0.5s ease-out; /* Suaviza la transición de transformación y opacidad */
+}
+.scl-imageSection.visible {
+    transform: translateY(0); /* Mueve la imagen a su posición final */
+    opacity: 1; /* Hace la imagen completamente visible */
+}
 
 .scl-button-container {
     margin-top: 1rem;
