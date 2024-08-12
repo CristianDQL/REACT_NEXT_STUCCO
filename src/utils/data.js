@@ -274,7 +274,7 @@ export const verticalSliderData1 = [
   
 ];
 
-/* Title Portfolio */
+/* Title PortfolioHome */
 
 export const titlePortfolioData = {
   tag: "Our Selected Stucco Projects",
@@ -283,7 +283,7 @@ export const titlePortfolioData = {
 };
 
 
-/* Portfolio */
+/* PortfolioHome */
 export const portfolioData = [
   {
     icon: "/Services/luxury-home.jpg",
@@ -370,4 +370,93 @@ export const contactUsTitleData = {
   description: ""
 };
 
+/* PortfolioPage */
+
+
+export const portfolioPageData = [
+    {
+      id: 1,
+      image: "/Services/luxury-home.jpg",
+      title: "Brickell Bay Drive",
+      category: "Optimum Residential"
+      
+    },
+    {
+      id: 2,
+      image: "/Services/luxury-home-2.jpg",
+      title: "Pan American Drive",
+      category: "Optimum Residential"
+    },
+    {
+      id: 3,
+      image: "/Services/luxury-home-3.jpg",
+      title: "Tiger Tail Avenue",
+      category: "Optimum Residential"
+    },
+    {
+      id: 4,
+      image: "/Services/luxury-home-5.jpg",
+      title: "NE 4th Court",
+      category: "Optimum Commercial"
+    },
+    {
+      id: 5,
+      image: "/Services/2.jpg",
+      title: "Prairie Avenue",
+      category: "Optimum Commercial"
+    },
+    {
+      id: 6,
+      image: "/Services/luxury-home.jpg",
+      title: "Brickell Bay Drive",
+      category: "Optimum Residential"
+      
+    },
+    {
+      id: 7,
+      image: "/Services/luxury-home-2.jpg",
+      title: "Pan American Drive",
+      category: "Optimum Residential"
+    },
+    {
+      id: 8,
+      image: "/Services/2.jpg",
+      title: "Prairie Avenue",
+      category: "Optimum Commercial"
+    },
+    {
+      id: 9,
+      image: "/Services/luxury-home.jpg",
+      title: "Brickell Bay Drive",
+      category: "Optimum Residential"
+      
+    },
+    
+    {
+      id: 10,
+      image: "/Services/luxury-home-2.jpg",
+      title: "Pan American Drive",
+      category: "Optimum Residential"
+    },
+    {
+      id: 11,
+      image: "/Services/luxury-home-3.jpg",
+      title: "Tiger Tail Avenue",
+      category: "Optimum Residential"
+    },
+    {
+      id: 12,
+      image: "/Services/luxury-home-5.jpg",
+      title: "NE 4th Court",
+      category: "Optimum Commercial"
+    },
+    
+];
+/* Title PortfolioPage */
+
+export const titlePortfolioPageData = {
+  tag: "",
+  title: "PORTFOLIO",
+  description: "Welcome to the Portfolio of Optimum Stucco Inc., where luxury meets craftsmanship. Our curated selection of projects reflects the precision and elegance that we bring to every residential and commercial property. With over a decade of expertise, we have transformed some of Miami's most prestigious addresses, enhancing their aesthetic allure and structural integrity. Each project in our portfolio is a testament to our unwavering commitment to quality and sophistication. For those who seek to elevate their property to the pinnacle of refinement, we invite you to explore our work and contact us for a bespoke consultation."
+};
  

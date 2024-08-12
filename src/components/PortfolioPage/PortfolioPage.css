@@ -1,20 +1,86 @@
-.port-wrapper {
+.portPage-wrapper {
     padding-top: 5rem;
     padding-bottom: 5rem;
     
 }
 
-.port-container {
+.portPage-container {
     display: flex;
     flex-direction: column;
     gap: 1rem; /* Reducir el espacio entre el bloque de texto y el slider */
     
 }
 
+/* TITLE */
+/* Estilo general del contenedor */
+.portPage-container .t-head {
+    justify-content: center; /* Centrar el contenido */
+    padding: 20px; /* Añadir padding */
+    text-align: center; /* Centrar el texto */
+    max-width: 800px; /* Limitar el ancho del texto para mejor legibilidad */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
 
+/* Estilo para el título */
+.portPage-container .t-head .title {
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+    font-weight: bold; /* Hacer el título más destacable */
+    color: #333; /* Color del título */
+    margin-bottom: 1rem; /* Espaciado debajo del título */
+}
+
+/* Estilo para el subtítulo o tag */
+.portPage-container .t-head .tag {
+    font-size: 1.5rem; /* Tamaño de fuente para el subtítulo */
+    font-weight: normal; /* No tan pesado como el título */
+    color: #555; /* Color más suave para el subtítulo */
+    margin-bottom: 1.5rem; /* Espaciado debajo del subtítulo */
+}
+
+/* Estilo para la descripción */
+.portPage-container .t-head .des {
+    font-size: 1.1rem; /* Tamaño de fuente para el texto */
+    color: #ff0000; /* Color del texto */
+    text-align: justify; /* Justificar el texto para un aspecto más limpio */
+    margin-bottom: 2rem; /* Espaciado debajo del párrafo */
+}
+
+
+
+
+
+
+/* Filter Buttons */
+.ppfilter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.portPage-button {
+    margin-right: 1rem;
+    padding: 8px 16px;
+    background-color: #dad9d9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.portPage-button:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+.portPage-button:hover {
+    background-color: #E62200;
+    color: white;
+}
+
+/* Image Grid */
 
 /* Grid container */
-.port-grid-container {
+.portPage-grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 1rem;
@@ -23,7 +89,7 @@
 }
 
 /* Features section */
-.port-feature {
+.portPage-feature {
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
@@ -40,12 +106,12 @@
     cursor: pointer;
 } */
 
-.project-image {
+.portPage-project-image {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease-in-out;
 }
-.project-info {
+.portPage-project-info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,7 +125,7 @@
     z-index: 2; /* Asegura que el texto esté encima de la capa oscura */
 }
 /* Additional styling for the new description element */
-.project-desc {
+.portPage-project-desc {
     font-size: 0.8rem;
     margin-top: 0.7rem;
     color: white; /* Color para diferenciar la descripción del título */
@@ -67,15 +133,15 @@
 }
 
 /* Hover effects */
-.port-feature:hover .project-image {
+.portPage-feature:hover .portPage-project-image {
     transform: scale(1.05); /* Ligero aumento para dar efecto al hacer hover */
 }
 
-.port-feature:hover .project-info {
+.portPage-feature:hover .portPage-project-info {
     display: block; /* Muestra el contenedor de información al hacer hover */
 }
 
-.port-feature::before {
+.portPage-feature::before {
     content: '';
     position: absolute;
     top: 0;
@@ -89,59 +155,11 @@
     z-index: 1; /* Asegura que esta capa esté justo encima de la imagen */
 }
 
-.port-feature:hover::before {
+.portPage-feature:hover::before {
     opacity: 1; /* Hace visible el fondo oscuro al hacer hover */
 }
 
 
-/* .project-info {
-    padding: 0.5rem;
-} */
-
-/* .project-title {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    text-align: center;
-}
-
-.project-category {
-    font-size: 0.7rem;
-    color: #666;
-    text-align: center;
-} */
-
-/* Button */
-.port-button-container {
-    margin-top: 1rem;
-    text-align: center;
-    padding: 0.5rem;
-}
-  
-.port-button {
-    background-color: #E62200;
-    color: white;
-    padding: 0.6rem 1rem;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-    transition: background-color 0.5s ease;
-
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6); /* Added shadow */
-}
-  
-.port-button:hover {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transform: translateY(-2px);
-    background-color: #650100;
-    color: #ffffff;
-}
-.port-arrow-icon {
-    margin-left: 0.5rem;
-    animation: slide 1s infinite;
-}
 
 @keyframes slide {
     0%, 100% {
@@ -157,11 +175,11 @@
         display: flex;
         justify-content: center;
     } */
-    .port-head .title {
+    .portPage-head .title {
         max-width: 100%;
     }
     
-    .port-grid-container {
+    .portPage-grid-container {
         grid-template-columns: repeat(2, 1fr); /* 3 columns for medium screens */
     }
 }
@@ -171,16 +189,30 @@
         display: flex;
         justify-content: center;
     } */
-    .port-head .tag, .od-head .title {
+    .portPage-head .tag, .od-head .title {
         text-align: center;
     }
-    .port-wrapper {
+    .portPage-wrapper {
         padding-top: 3rem; 
     }
     
 }
 @media (max-width: 576px) {
-    .port-grid-container {
+    .portPage-grid-container {
         grid-template-columns: repeat(1, 1fr); /* 1 column for very small screens */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
