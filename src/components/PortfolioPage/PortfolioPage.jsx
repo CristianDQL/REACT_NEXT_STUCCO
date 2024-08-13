@@ -31,7 +31,10 @@ const PortfolioPage = () => {
             <Title 
                 tag={titlePortfolioPageData.tag} 
                 title={titlePortfolioPageData.title} 
-                description={titlePortfolioPageData.description} 
+                description={titlePortfolioPageData.description.split('\n\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+                /* description={titlePortfolioPageData.description}  */
                 className="portPage-title"
             />
 

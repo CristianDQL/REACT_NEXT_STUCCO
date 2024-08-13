@@ -457,6 +457,6 @@ export const portfolioPageData = [
 export const titlePortfolioPageData = {
   tag: "",
   title: "PORTFOLIO",
-  description: "Welcome to the Portfolio of Optimum Stucco Inc., where luxury meets craftsmanship. Our curated selection of projects reflects the precision and elegance that we bring to every residential and commercial property. With over a decade of expertise, we have transformed some of Miami's most prestigious addresses, enhancing their aesthetic allure and structural integrity. Each project in our portfolio is a testament to our unwavering commitment to quality and sophistication. For those who seek to elevate their property to the pinnacle of refinement, we invite you to explore our work and contact us for a bespoke consultation."
+  description: "Enter Our Portfolio, where refined craftsmanship and timeless elegance converge.  With over a decade of experience, we have had the privilege of enhancing some of Miami's most distinguished addresses, combining beauty with enduring strength. \n\n Each project reflects our steadfast dedication to quality and attention to detail. If you're looking to elevate your property with a touch of sophistication, we invite you to browse our work and reach out for a personalized consultation."
 };
  

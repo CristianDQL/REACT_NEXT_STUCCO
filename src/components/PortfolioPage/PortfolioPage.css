@@ -11,15 +11,18 @@
     
 }
 
+
+
 /* TITLE */
 /* Estilo general del contenedor */
 .portPage-container .t-head {
     justify-content: center; /* Centrar el contenido */
     padding: 20px; /* Añadir padding */
     text-align: center; /* Centrar el texto */
-    max-width: 800px; /* Limitar el ancho del texto para mejor legibilidad */
+    max-width: 70%; /* Limitar el ancho del texto para mejor legibilidad */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    
 }
 
 /* Estilo para el título */
@@ -28,22 +31,16 @@
     font-weight: bold; /* Hacer el título más destacable */
     color: #333; /* Color del título */
     margin-bottom: 1rem; /* Espaciado debajo del título */
-}
 
-/* Estilo para el subtítulo o tag */
-.portPage-container .t-head .tag {
-    font-size: 1.5rem; /* Tamaño de fuente para el subtítulo */
-    font-weight: normal; /* No tan pesado como el título */
-    color: #555; /* Color más suave para el subtítulo */
-    margin-bottom: 1.5rem; /* Espaciado debajo del subtítulo */
+    font-weight: 300;
 }
 
 /* Estilo para la descripción */
 .portPage-container .t-head .des {
     font-size: 1.1rem; /* Tamaño de fuente para el texto */
-    color: #ff0000; /* Color del texto */
+    color: #757575; /* Color del texto */
     text-align: justify; /* Justificar el texto para un aspecto más limpio */
-    margin-bottom: 2rem; /* Espaciado debajo del párrafo */
+    margin-bottom: 1rem; /* Espaciado debajo del párrafo */
 }
 
 
@@ -57,7 +54,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .portPage-button {
