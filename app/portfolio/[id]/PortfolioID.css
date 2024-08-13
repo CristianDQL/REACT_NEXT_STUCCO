@@ -1,0 +1,12 @@
+.ipp-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+.ipp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Reducir el espacio entre el bloque de texto y el slider */
+    
+}

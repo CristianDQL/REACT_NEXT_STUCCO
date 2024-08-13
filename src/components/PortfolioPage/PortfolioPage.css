@@ -39,7 +39,7 @@
 .portPage-container .t-head .des {
     font-size: 1.1rem; /* Tamaño de fuente para el texto */
     color: #757575; /* Color del texto */
-    text-align: justify; /* Justificar el texto para un aspecto más limpio */
+    text-align: center; /* Justificar el texto para un aspecto más limpio ????????????????????*/
     margin-bottom: 1rem; /* Espaciado debajo del párrafo */
 }
 

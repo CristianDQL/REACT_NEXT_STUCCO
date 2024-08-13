@@ -460,3 +460,106 @@ export const titlePortfolioPageData = {
   description: "Enter Our Portfolio, where refined craftsmanship and timeless elegance converge.  With over a decade of experience, we have had the privilege of enhancing some of Miami's most distinguished addresses, combining beauty with enduring strength. \n\n Each project reflects our steadfast dedication to quality and attention to detail. If you're looking to elevate your property with a touch of sophistication, we invite you to browse our work and reach out for a personalized consultation."
 };
  
+
+/* INDIVIDUAL PORTFOLIOPAGE */
+export const individualPortfolioPageData = [
+  {
+    id: 5,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 1,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 2,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 3,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 4,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 6,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 7,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 8,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 9,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 10,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  {
+    id: 11,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Tiger Tail Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Tiger Tail Avenue."
+  },
+  {
+    id: 12,
+    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    title: "Prairie Avenue",
+    category: "Optimum Commercial",
+    description: "Detailed description of the Brickell Bay Drive project."
+  },
+  /* {
+    id: 2,
+    images: ["/Services/luxury-home-2.jpg", "/Services/interior-2.jpg", "/Services/pool.jpg"],
+    title: "Pan American Drive",
+    category: "Optimum Residential",
+    description: "Detailed description of the Pan American Drive project."
+  },
+  {
+    id: 3,
+    images: ["/Services/luxury-home-3.jpg", "/Services/interior-3.jpg", "/Services/garden.jpg"],
+    title: "Tiger Tail Avenue",
+    category: "Optimum Residential",
+    description: "Detailed description of the Tiger Tail Avenue project."
+  }, */
+  // Añadir más proyectos según sea necesario
+];

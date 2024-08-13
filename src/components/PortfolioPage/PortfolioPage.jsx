@@ -3,6 +3,8 @@ import './PortfolioPage.css';
 import { portfolioPageData, titlePortfolioPageData } from '@/src/utils/data';
 import Image from 'next/image';
 import Title from '../Title/Title';
+import Link from 'next/link'; 
+import PortfolioButton from './PortfolioButton';
 
 
 
@@ -51,19 +53,28 @@ const PortfolioPage = () => {
             <div className='portPage-grid-container'>
                 {filteredProjects.map(project => (
                 <div key={project.id} className="portPage-feature">
-                    <Image
-                    src={project.image}
-                    alt="Portfolio Optimum stucco services" /* {project.title} */
-                    /* <h3>{project.title}</h3> */
-                    className="portPage-project-image"
-                    width={300}
-                    height={200}
-                    />
-                    <div className="portPage-project-info">
-                    <h3 className="portPage-project-title">{project.title}</h3>
-                    {project.category && <p className="portPage-project-desc">{project.category}</p>}
-                    
+
+                  {/* Dinamic Routing */}
+                  {/* <Link href={`/portfolio/${project.id}`}> */}
+                    <div> 
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} - Portfolio Optimum stucco services`} /* {project.title} */
+                        /* <h3>{project.title}</h3> */
+                        className="portPage-project-image"
+                        width={300}
+                        height={200}
+                      />
+                      <div className="portPage-project-info">
+                        <h3 className="portPage-project-title">{project.title}</h3>
+                        {project.category && <p className="portPage-project-desc">{project.category}</p>}
+                        
+                        {/* Dinamic Routing  */}
+                        <PortfolioButton id={project.id}/>
+                      </div>
                     </div>
+                  {/* </Link> */}
+
                 </div>
                 ))}
             </div>
