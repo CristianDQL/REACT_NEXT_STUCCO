@@ -472,24 +472,24 @@ export const individualPortfolioPageData = [
   },
   {
     id: 1,
-    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    images: ["/Services/luxury-home.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
     title: "Prairie Avenue",
-    category: "Optimum Commercial",
+    category: "Optimum Residential",
     description: "Detailed description of the Brickell Bay Drive project."
   },
   {
     id: 2,
-    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    images: ["/Services/luxury-home-2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
     title: "Prairie Avenue",
-    category: "Optimum Commercial",
-    description: "Detailed description of the Brickell Bay Drive project."
+    category: "Optimum Residential",
+    description: "Detailed description of the Pan American Drive project."
   },
   {
     id: 3,
-    images: ["/Services/2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
+    images: ["/Services/luxury-home-3.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
     title: "Prairie Avenue",
-    category: "Optimum Commercial",
-    description: "Detailed description of the Brickell Bay Drive project."
+    category: "Optimum Residential",
+    description: "Detailed description of the Tiger Tail Avenue project."
   },
   {
     id: 4,

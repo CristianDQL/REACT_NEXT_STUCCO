@@ -201,7 +201,15 @@
 }
 
 
-
+/* DESCATIVAR HOVER EN LO QUE NO SEA DESKTOP---- COMPROBAR */
+/* @media (hover: hover) and (pointer: fine) {
+    .portPage-project-image:hover {
+      Efectos de hover solo aplicables en dispositivos con capacidad de hover, como desktop
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  } */
+  
 
 
 

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { individualPortfolioPageData } from '@/src/utils/data';
+import './PortfolioID.css';
+
 
 export async function generateStaticParams() {
     // Generates static parameters for dynamic routes
@@ -27,22 +29,15 @@ export default function Project({ params }) {
         <div className="ipp-wrapper">
             <div className="container">
                 <div className="ipp-container">
-                    <h1>{project.title}</h1>
-                    {/* <Image
-                        src={project.image}
-                        alt={`${project.title} - Portfolio Optimum stucco services`} {project.title}
-                        <h3>{project.title}</h3>
-                        className="portPage-project-image"
-                        width={300}
-                        height={200}
-                      /> */}
+                    <h1 className="ipp-title">{project.title}</h1>
+                    <p className="ipp-description">{project.description}</p>
                     {project.images.map((image, index) => (
-                        <div key={index}>
-                            <Image src={image} alt={`${project.title} - image ${index + 1}`} width={800} height={600} />
+                        <div key={index} className="ipp-image-container">
+                            <Image src={image} alt={`${project.title} - image ${index + 1}`} width={800} height={600} layout="responsive" />
                         </div>
                     ))}
-                    <p>{project.description}</p>
-                    <p>Category: {project.category}</p>
+                    
+                    <p>{project.category}</p>
                 </div>
             </div>
         </div>
