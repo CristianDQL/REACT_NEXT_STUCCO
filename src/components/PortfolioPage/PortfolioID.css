@@ -1,3 +1,5 @@
+/* ESTILOS para la ruta dinámica [id]/page.jsx */
+
 .ipp-wrapper {
     
     padding: 5rem 3rem;
@@ -40,15 +42,16 @@
     margin-bottom: 1.25rem;
 }
 
-.ipp-images {
-    /* margin-top: 20px; */
-    margin: 2rem 0;
-}
-
+/*  */
 .ipp-image-container {
     max-width: 100%;
-    /* margin: auto; */
     display: block;
     margin-bottom: 0.9375rem;
 }
+
+.ipp-images{
+    border-radius: 1rem;
+    
+}
+
 

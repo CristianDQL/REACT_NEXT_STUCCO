@@ -38,7 +38,7 @@ export default function Project({ params }) {
                     <p className="ipp-description">{project.description}</p>
                     {project.images.map((image, index) => (
                         <div key={index} className="ipp-image-container">
-                            <Image src={image} alt={`${project.title} - image ${index + 1}`} width={800} height={600} layout="responsive" />
+                            <Image className="ipp-images" src={image} alt={`${project.title} - image ${index + 1}`} width={800} height={600} layout="responsive" />
                         </div>
                     ))}
                     
