@@ -7,6 +7,11 @@ import Link from 'next/link';
 
 
 
+// Función para generar un slug URL-amigable
+function slugify(title) {
+  return title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+}
+
 
 const PortfolioPage = () => {
   const [filter, setFilter] = useState('All');
@@ -52,32 +57,22 @@ const PortfolioPage = () => {
             {/* Grid section */}
             <div className='portPage-grid-container'>
                 {filteredProjects.map(project => (
-                  <Link key={project.id} href={`/portfolio/${project.id}`} passHref>
-                  <div className="portPage-feature">
-                    <Image
-                      src={project.image}
-                      alt={`${project.title} - Portfolio Optimum stucco services`}
-                      className="portPage-project-image"
-                      width={300}
-                      height={200}
-                    />
-                    <div className="portPage-project-info">
-                      <h3 className="portPage-project-title">{project.title}</h3>
-                      {project.category && <p className="portPage-project-desc">{project.category}</p>}
+                  <Link key={project.id} href={`/portfolio/${project.id}#${slugify(project.title)}`} passHref> {/* el # asegura que no lo tome como param para la ruta dinámica */}
+                    <div className="portPage-feature">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} - Portfolio Optimum stucco services`}
+                        className="portPage-project-image"
+                        width={300}
+                        height={200}
+                      />
+                      <div className="portPage-project-info">
+                        <h3 className="portPage-project-title">{project.title}</h3>
+                        {project.category && <p className="portPage-project-desc">{project.category}</p>}
+                      </div>
                     </div>
-                  </div>
-                </Link>
-
-
-
-
-
-
-
-
-
-
-                
+                  </Link>
+        
 
 
 

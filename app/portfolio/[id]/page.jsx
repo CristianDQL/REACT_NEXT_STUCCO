@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { individualPortfolioPageData } from '@/src/utils/data';
-/* import './PortfolioID.css'; */
+
 import '@/src/components/PortfolioPage/PortfolioID.css'
 
 /* PAGINA DE DYNAMIC ROUTING PARA LAS PÁGINAS INDIVIDUALES DE LOS PROYECTOS DE PORTFOLIO */
 
 
 
-
+/* prepara los datos para el pre-renderizado */
 export async function generateStaticParams() {
     // Generates static parameters for dynamic routes
     return individualPortfolioPageData.map(project => ({

@@ -461,7 +461,9 @@ export const titlePortfolioPageData = {
 };
  
 
-/* INDIVIDUAL PORTFOLIOPAGE */
+/* INDIVIDUAL PORTFOLIOPAGE
+MODIFICAR TAMAÑO DE IMAGEN? PARA QUE SALGA COMPLETA dentro de su div 
+MODIFICAR IMAGES, TITLE, DESCRIPTION*/
 export const individualPortfolioPageData = [
   {
     id: 5,
@@ -473,21 +475,21 @@ export const individualPortfolioPageData = [
   {
     id: 1,
     images: ["/Services/luxury-home.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
-    title: "Prairie Avenue",
+    title: "Brickell Bay Drive",
     category: "Optimum Residential",
     description: "Detailed description of the Brickell Bay Drive project."
   },
   {
     id: 2,
     images: ["/Services/luxury-home-2.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
-    title: "Prairie Avenue",
+    title: "Pan American Drive",
     category: "Optimum Residential",
     description: "Detailed description of the Pan American Drive project."
   },
   {
     id: 3,
     images: ["/Services/luxury-home-3.jpg", "/Services/luxury-home-5.jpg", "/Services/luxury-home-2.jpg"],
-    title: "Prairie Avenue",
+    title: "Tiger Tail Avenue",
     category: "Optimum Residential",
     description: "Detailed description of the Tiger Tail Avenue project."
   },
