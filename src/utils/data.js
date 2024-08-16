@@ -194,8 +194,8 @@ export const titleServicesData = {
   description: ""
 };
 
-
-/* Datos para los Splits, cada json será una aprte diferente. Crear uno por cada sección */
+/* SERVICES-HOME */
+/* Datos para los Splits del Home, cada json será una aprte diferente. Crear uno por cada sección */
 export const splitScreenData1 = {
   title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
   paragraphs: [
@@ -370,8 +370,11 @@ export const contactUsTitleData = {
   description: ""
 };
 
-/* PortfolioPage */
 
+
+
+
+/* PortfolioPage */
 
 export const portfolioPageData = [
     {
@@ -564,4 +567,85 @@ export const individualPortfolioPageData = [
     description: "Detailed description of the Tiger Tail Avenue project."
   }, */
   // Añadir más proyectos según sea necesario
+];
+
+
+
+/* --------------------------------- */
+/* SERVICES-PAGE */
+/* Datos para los Splits del Home, cada json será una aprte diferente. Crear uno por cada sección */
+export const splitScreenDataP1 = {
+  title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
+  paragraphs: [
+    "Optimum Stucco Inc. is a leading stucco contractor based in Miami-Dade County, established in 2016, specializing in high-quality stucco for residential and commercial properties.",
+    /* "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project." */
+    "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
+  ],
+  buttonText: "Our Journey",
+  buttonLink: "#",
+  imageUrl: "/services/luxury-home-2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+export const splitScreenDataP2 = {
+  title: "COMMERCIAL STUCCO EXCELLENCE",
+  paragraphs: [
+    "Optimum Stucco leads in providing advanced stucco solutions for commercial properties in Miami, focusing on durability and aesthetic appeal. Our 'Structural Coat' technique, ideal for both new finishes and upgrades over existing stucco, offers cost-effective, stylish protection.",
+    "With extensive experience in enhancing corporate buildings and retail spaces, no project is too complex for our skilled team. Choose Optimum Stucco Inc. for a finish that combines resilience with striking curb appeal, elevating the look of your business."
+    
+    
+  ],
+  buttonText: "Our Process",
+  buttonLink: "#",
+  imageUrl: "/Services/2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+export const splitScreenData3 = {
+  title: "RESIDENTIAL STUCCO EXPERTISE",
+  paragraphs: [
+    "Optimum Stucco Inc. specializes in stunning residential stucco finishes across Miami. Our 'Residential Elegance' technique ensures a seamless, elegant look, enhancing your home's beauty and value, whether for new builds or updates.",
+    "With vast experience in diverse residential projects, we work closely with homeowners to meet their vision. Choose Optimum Stucco Inc. for durable, sophisticated stucco that protects and beautifies your home, adding curb appeal and sophistication."
+    
+  ],
+  buttonText: "Our Technique",
+  buttonLink: "#",
+  imageUrl: "/services/luxury-home.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+export const splitScreenDataP4 = {
+  title: "COMPREHENSIVE STUCCO SERVICES",
+  paragraphs: [
+    "Optimum Stucco offers a wide range of stucco services for residential properties in Miami, including new stucco applications and EIFS (Exterior Insulation and Finish Systems). Our expertise ensures that each project, whether it’s a fresh application or a complex EIFS installation, enhances your home's durability and aesthetic appeal.",
+    "EIFS is a popular choice for homeowners seeking superior insulation and a sleek finish. Our skilled team installs EIFS with precision, providing excellent thermal performance and moisture control while offering versatile design options. Trust Optimum Stucco Inc. to deliver high-quality, energy-efficient solutions that elevate the look and comfort of your home."
+    
+  ],
+  buttonText: "Our Formula",
+  buttonLink: "#",
+  imageUrl: "/Services/EIFS.png",
+  imageAlt: "eifs treatment"
+};
+
+/* SERVICES */
+export const verticalSliderDataP1 = [
+  {
+    icon: "/services/luxury-home-2.jpg",
+    title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
+    des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
+  },
+  {
+    icon: "/Services/2.jpg",
+    title: "COMMERCIAL STUCCO EXCELLENCE",
+    des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
+  },
+  {
+    icon: "/services/luxury-home.jpg",
+    title: "RESIDENTIAL STUCCO EXPERTISE",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+  },
+  {
+    icon: "/Services/EIFS.png",
+    title: "COMPREHENSIVE STUCCO SERVICES",
+    des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+  },
+  
+  
 ];

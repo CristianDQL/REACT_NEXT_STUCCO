@@ -1,7 +1,21 @@
 import React from 'react'
-
-
 import './Footer.css'
+import Link from 'next/link';
+
+
+
+// Map of links to display in the side navigation.
+// Depending on the size of the application, this would be stored in a database.
+const links = [
+  /* { name: 'HOME', href: '/'}, */
+  {
+    name: 'SERVICES', href: '/services'
+  },
+  { name: 'PORTFOLIO', href: '/portfolio'},
+  { name: 'DETAILS', href: '/details'},
+];
+
+
 
 const Footer = () => {
   return (
@@ -15,11 +29,30 @@ const Footer = () => {
           <hr/>
 
           <div className="f-menu">
-            <span>Home</span>
+            {links.map((link) => (
+                <Link 
+                    key={link.name} 
+                    href={link.href}
+                    className='footer-link-style'
+                    /* className={clsx(
+                        'link-style',
+                        { 'active-link': pathname === link.href }
+                    )} */
+                        
+                >   
+                    <p className="hidden md:block">{link.name}</p>
+                </Link>
+                              
+              ))}
+
+
+
+
+            {/* <span>Home</span>
             <span>Services</span>
             <span>Portfolio</span>
             <span>Details</span>
-            <span>Contact Us</span>
+            <span>Contact Us</span> */}
           </div>
 
           <hr />

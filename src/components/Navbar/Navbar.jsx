@@ -24,7 +24,7 @@ const links = [
     },
     { name: 'PORTFOLIO', href: '/portfolio'},
     { name: 'DETAILS', href: '/details'},
-  ];
+];
 
  
 
@@ -81,20 +81,20 @@ const Navbar = () => {
                 <div className="n-right">
                     <div className="n-menu">
                         
-                    {links.map((link) => (
-                        <Link 
-                            key={link.name} 
-                            href={link.href}
-                            
-                            className={clsx(
-                                'link-style',
-                                { 'active-link': pathname === link.href }
-                            )}
+                        {links.map((link) => (
+                            <Link 
+                                key={link.name} 
+                                href={link.href}
                                 
-                        >   
-                            <p className="hidden md:block">{link.name}</p>
-                        </Link>
-                    ))}
+                                className={clsx(
+                                    'link-style',
+                                    { 'active-link': pathname === link.href }
+                                )}
+                                    
+                            >   
+                                <p className="hidden md:block">{link.name}</p>
+                            </Link>
+                        ))}
                         
                     </div>
                     <div className="fund-button">CONTACT US</div>
