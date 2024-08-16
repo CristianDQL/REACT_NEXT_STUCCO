@@ -6,7 +6,7 @@ import  { useEffect, useRef } from 'react';
 
 
 
-const SplitScreenR = ({ data }) => {
+const SplitScreenR = ({ data, showButton = true }) => {
 
   /* Efecto Image */
   const imageRef = useRef(null);
@@ -68,11 +68,18 @@ const SplitScreenR = ({ data }) => {
                 {data.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
-                <div className="scr-button-container">
-                  <button className="scr-button">
-                    {data.buttonText}<span className="arrow-icon">{">>"}</span>
-                  </button>
-                </div>
+
+
+                {/* Condición para mostrar u ocultar el botón */}
+                {showButton && (
+                    <div className="scr-button-container">
+                      <button className="scr-button">
+                        {data.buttonText}<span className="arrow-icon">{">>"}</span>
+                      </button>
+                    </div>
+                )}
+
+
               </div>
             
 

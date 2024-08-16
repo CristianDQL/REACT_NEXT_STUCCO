@@ -1,5 +1,5 @@
 import React from 'react';
-import './SplitScreenL.css';
+import './SplitScreenPageR.css';
 import Image from 'next/image';
 
 import  { useEffect, useRef } from 'react';
@@ -43,25 +43,33 @@ const SplitScreenL = ({ data, showButton = true }) => {
 
 
   return (
-    <div className="scl-wrapper">
+    <div className="scpR-wrapper">
       <div className="container">
-        <div className="scl-container">
+        <div className="scpR-container">
 
 
-          
+            
+
+            {/* IMage Section */}
+            
+            <div ref={imageRef} className="scpR-imageSection">
+                <Image src={data.imageUrl} alt={data.imageAlt} fill style={{ objectFit: "cover" }} />
+            </div>
+
+
             {/* Text Section */}
             
-              <div className="scl-textSection">
+              <div className="scpR-textSection">
                 <h1>{data.title}</h1>
-                <div className='scl-linea'></div>
+                <div className='scpR-linea'></div>
                 {data.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
 
                 {/* Condición para mostrar u ocultar el botón */}
                 {showButton && (
-                    <div className="scl-button-container">
-                      <button className="scl-button">
+                    <div className="scpR-button-container">
+                      <button className="scpR-button">
                         {data.buttonText}<span className="arrow-icon">{">>"}</span>
                       </button>
                     </div>
@@ -69,11 +77,7 @@ const SplitScreenL = ({ data, showButton = true }) => {
               </div>
             
 
-            {/* IMage Section */}
             
-              <div ref={imageRef} className="scl-imageSection">
-                <Image src={data.imageUrl} alt={data.imageAlt} fill style={{ objectFit: "cover" }} />
-              </div>
             
 
           

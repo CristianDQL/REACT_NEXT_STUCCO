@@ -1,0 +1,156 @@
+.scpR-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    color: #757575; /* Un gris oscuro para el texto */
+
+    margin: 2rem 0;
+    
+}
+
+
+ 
+/* Text Section */
+.scpR-textSection {
+    flex: 1;
+    padding: 30px;
+    max-width: 40%; /* Ajusta esto según el diseño */
+
+    margin: 0 1rem 0 5rem;
+}
+.scpR-textSection h1 {
+    font-size: 1.7rem; /* Tamaño grande para el título */
+    font-weight:500; /* Texto en negrita para el título */
+    margin-bottom: 1rem; /* Espacio después del título */
+    /* border-bottom: 3px solid black;  Línea debajo del título  */
+    padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+    color: #333;
+}
+.scpR-linea{
+    border-bottom: 2px solid rgb(0, 0, 0); /* Línea debajo del título */
+    width: 30%;
+    padding: 0rem; /* Espacio entre el texto y la línea */
+    margin: 0;
+}
+
+.scpR-textSection p {
+    font-size: 0.95rem; /* Tamaño estándar para el texto */
+    line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
+    margin-bottom: 1rem; /* Espacio entre párrafos */
+    text-align: justify;
+}
+
+/* IMage Section */
+.scpR-imageSection {
+    flex: 1;
+    position: relative;
+    height:30rem; /* Ajusta la altura según sea necesario */
+    max-width: 40%;
+    margin: 0 5rem 0 1rem;
+
+    overflow: hidden; /* Esconde cualquier parte de la imagen que se desplace fuera del contenedor */
+    transform: translateY(100px); /* Inicia la imagen fuera de pantalla hacia abajo */
+    opacity: 0; /* Inicia la imagen completamente transparente */
+    transition: transform 1s ease-out, opacity 0.5s ease-out; /* Suaviza la transición de transformación y opacidad */
+}
+.scpR-imageSection.visible {
+    transform: translateY(0); /* Mueve la imagen a su posición final */
+    opacity: 1; /* Hace la imagen completamente visible */
+}
+
+.scpR-button-container {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+  
+.scpR-button {
+    background-color: #E62200;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Added shadow */ 
+}
+  
+.scpR-button:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+    background-color: #650100;
+    color: #ffffff;
+}
+.scpR-arrow-icon {
+    margin-left: 0.5rem;
+    animation: slide 1s infinite;
+}
+
+
+
+@media only screen and (min-width: 901px) and (max-width: 1040px),
+       only screen and (min-width: 601px) and (max-width: 900px) {
+
+
+    
+    .scpR-container {
+        flex-direction: column; /* Coloca la imagen encima del texto */
+        align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
+        
+    }
+
+    .scpR-textSection{
+        flex: none;
+        max-width: 100%; 
+        margin: 1rem 5rem 0 5rem;
+    }
+    
+    .scpR-imageSection {
+        flex: none; /* Elimina la flexibilidad para que tomen el ancho completo */
+        max-width: 100%; /* Establece el ancho máximo al 100% para asegurar que ocupen todo el contenedor */
+        margin: 1rem 0; /* Establece un margen uniforme en la parte superior e inferior */
+    }
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .scpR-container {
+        flex-direction: column; /* Coloca la imagen encima del texto */
+        align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
+        
+    }
+
+    .scpR-textSection{
+        flex: none;
+        max-width: 100%; 
+        margin: 1rem 5rem 0 5rem;
+    }
+    
+    .scpR-imageSection {
+        flex: none; /* Elimina la flexibilidad para que tomen el ancho completo */
+        max-width: 100%; /* Establece el ancho máximo al 100% para asegurar que ocupen todo el contenedor */
+        margin: 1rem 0; /* Establece un margen uniforme en la parte superior e inferior */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

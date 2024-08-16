@@ -186,6 +186,9 @@ export const heroData = [
   },
 ];
 
+/* --------------------------------------- */
+
+
 /* Title Services */
 // data.js
 export const titleServicesData = {
@@ -274,6 +277,10 @@ export const verticalSliderData1 = [
   
 ];
 
+
+/* --------------------------------------- */
+
+
 /* Title PortfolioHome */
 
 export const titlePortfolioData = {
@@ -351,6 +358,9 @@ export const portfolioData = [
   },
   
 ];
+
+/* --------------------------------------- */
+
 /* CONTACT US */
 export const contactUsData = [
   {
@@ -372,7 +382,7 @@ export const contactUsTitleData = {
 
 
 
-
+/* --------------------------------------- */
 
 /* PortfolioPage */
 
@@ -455,6 +465,7 @@ export const portfolioPageData = [
     },
     
 ];
+
 /* Title PortfolioPage */
 
 export const titlePortfolioPageData = {
@@ -572,60 +583,112 @@ export const individualPortfolioPageData = [
 
 
 /* --------------------------------- */
+
+/* Title Services */
+// data.js
+export const titleServicesPageData = {
+  tag: "Our Services",
+  title: "MASTERFUL STUCCO APPLICATIONS FOR LUXURY ESTATES AND COMMERCIAL VENTURES",
+  description: ""
+};
+
+
 /* SERVICES-PAGE */
 /* Datos para los Splits del Home, cada json será una aprte diferente. Crear uno por cada sección */
-export const splitScreenDataP1 = {
-  title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
+export const splitScreenServicesPageData1 = {
+  title: "EXPLORING STUCCO: THE ART OF LUXURY SURFACES",
   paragraphs: [
-    "Optimum Stucco Inc. is a leading stucco contractor based in Miami-Dade County, established in 2016, specializing in high-quality stucco for residential and commercial properties.",
+    "Discover the elegance and versatility of stucco. A preferred choice for discerning architects and homeowners, stucco offers a timeless appeal and unmatched durability tailored to the Florida climate.",
     /* "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project." */
-    "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
+    "Stucco not only enhances the visual appeal of your property but also provides a robust barrier against weather and time, making it ideal for both contemporary and classic designs."
   ],
-  buttonText: "Our Journey",
-  buttonLink: "#",
+  /* buttonText: "Our Journey",
+  buttonLink: "#", */
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"
 };
-export const splitScreenDataP2 = {
-  title: "COMMERCIAL STUCCO EXCELLENCE",
+export const splitScreenServicesPageData2 = {
+  title: "UNDERSTANDING STUCCO: THE OPTIMUM BUILDING MATERIAL",
   paragraphs: [
-    "Optimum Stucco leads in providing advanced stucco solutions for commercial properties in Miami, focusing on durability and aesthetic appeal. Our 'Structural Coat' technique, ideal for both new finishes and upgrades over existing stucco, offers cost-effective, stylish protection.",
-    "With extensive experience in enhancing corporate buildings and retail spaces, no project is too complex for our skilled team. Choose Optimum Stucco Inc. for a finish that combines resilience with striking curb appeal, elevating the look of your business."
-    
+    "Stucco is a versatile building material made from cement, sand, and lime, applied in several layers over a lathe base. This combination creates a solid, durable veneer that can be textured or smooth, offering a range of aesthetic finishes.",
+    "Chosen for its impressive durability and aesthetic flexibility, stucco is ideal for Florida's climate, providing excellent resistance to impact, fire, and moisture. Beyond its practical benefits, stucco also offers endless design possibilities, making it a top choice for enhancing both traditional and contemporary architecture."
     
   ],
-  buttonText: "Our Process",
-  buttonLink: "#",
-  imageUrl: "/Services/2.jpg",
-  imageAlt: "Luxury Home Interior"
-};
-export const splitScreenData3 = {
-  title: "RESIDENTIAL STUCCO EXPERTISE",
-  paragraphs: [
-    "Optimum Stucco Inc. specializes in stunning residential stucco finishes across Miami. Our 'Residential Elegance' technique ensures a seamless, elegant look, enhancing your home's beauty and value, whether for new builds or updates.",
-    "With vast experience in diverse residential projects, we work closely with homeowners to meet their vision. Choose Optimum Stucco Inc. for durable, sophisticated stucco that protects and beautifies your home, adding curb appeal and sophistication."
-    
-  ],
-  buttonText: "Our Technique",
-  buttonLink: "#",
+  /* buttonText: "Our Technique",
+  buttonLink: "#", */
   imageUrl: "/services/luxury-home.jpg",
   imageAlt: "Luxury Home Interior"
 };
-export const splitScreenDataP4 = {
-  title: "COMPREHENSIVE STUCCO SERVICES",
+export const splitScreenServicesPageData3 = {
+  title: "TRADITIONAL STUCCO: TIME-HONORED TECHNIQUES",
   paragraphs: [
-    "Optimum Stucco offers a wide range of stucco services for residential properties in Miami, including new stucco applications and EIFS (Exterior Insulation and Finish Systems). Our expertise ensures that each project, whether it’s a fresh application or a complex EIFS installation, enhances your home's durability and aesthetic appeal.",
-    "EIFS is a popular choice for homeowners seeking superior insulation and a sleek finish. Our skilled team installs EIFS with precision, providing excellent thermal performance and moisture control while offering versatile design options. Trust Optimum Stucco Inc. to deliver high-quality, energy-efficient solutions that elevate the look and comfort of your home."
+    "Rooted in tradition, our stucco applications combine age-old methods with modern materials for lasting beauty and resilience.",
+    "This process involves skilled craftsmanship to achieve the highest quality of finish that not only looks splendid but also stands the test of time."
     
   ],
-  buttonText: "Our Formula",
-  buttonLink: "#",
+  /* buttonText: "Our Formula",
+  buttonLink: "#", */
+  imageUrl: "/Services/luxury-home-2.jpg",
+  imageAlt: "eifs treatment"
+};
+export const splitScreenServicesPageData4 = {
+  title: "CUSTOM STUCCO FINISHES: TAILORED TO PERFECTION",
+  paragraphs: [
+    "Each surface is a canvas awaiting transformation. Our custom stucco finishes are crafted to enhance the unique architecture of each property, ensuring an aesthetic as individual as you.",
+    "We offer a variety of finishes, each designed to suit different architectural styles and personal tastes:",
+    "- Sand Finish: Subtle texture, ideal for adding sophistication.",
+    "- Lace and Skip Trowel: Mediterranean appeal, creating depth and warmth.",
+    "- Dash Finish: Rough texture, perfect for rustic settings.",
+    "- Smooth Finish: Sleek and modern, achieved through multiple layers and careful sanding."
+    
+    
+  ],
+  /* buttonText: "Our Process",
+  buttonLink: "#", */
+  imageUrl: "/Services/2.jpg",
+  imageAlt: "Luxury Home Interior"
+};
+
+
+export const splitScreenServicesPageData5 = {
+  title: "PRECISION STUCCO INSTALLATION: FROM START TO FINISH",
+  paragraphs: [
+    "Precision lies at the heart of all we do. Our installation process is designed to exceed the highest industry standards, ensuring every detail is perfect. We meticulously manage every phase, from the initial assessment to the final touch-ups, ensuring a seamless transition and flawless execution.",
+    "Our commitment extends beyond mere aesthetics. We prioritize the cleanliness and integrity of each property, implementing rigorous site management practices to maintain your space pristine throughout the installation process. Our team is dedicated to preserving the condition of your property, ensuring that every project is completed with minimal disruption and maximum attention to detail. This meticulous approach guarantees a flawless surface and total client satisfaction every time."
+    
+  ],
+  /* buttonText: "Our Formula",
+  buttonLink: "#", */
+  imageUrl: "/Services/luxury-home-5.jpg",
+  imageAlt: "eifs treatment"
+};
+export const splitScreenServicesPageData6 = {
+  title: "VERSATILE STUCCO APPLICATIONS: RESIDENTIAL & COMMERCIAL MASTERY",
+  paragraphs: [
+    "At Optimum Stucco, we specialize in delivering top-tier stucco services for both residential and commercial sectors. Whether enhancing the facade of a home or constructing a robust commercial building, our stucco solutions are tailored to meet diverse architectural needs.",
+    "Focusing exclusively on high-end residential homes and commercial buildings allows us to provide tailored solutions that meet the sophisticated demands of our clients. Our stucco work not only enhances the architectural beauty but also adds significant value and protection to every property."
+    
+  ],
+  /* buttonText: "Our Formula",
+  buttonLink: "#", */
+  imageUrl: "/Services/luxury-home-3.jpg",
+  imageAlt: "eifs treatment"
+};
+export const splitScreenServicesPageData7 = {
+  title: "EIFS: INNOVATIVE INSULATUON SOLUTUONS",
+  paragraphs: [
+    "Enhance your home's thermal efficiency with EIFS, a superior insulation solution that does not compromise on style.",
+    "EIFS installations by Optimum Stucco incorporate advanced techniques to improve your home's energy efficiency while offering a sleek, polished exterior look."
+    
+  ],
+  /* buttonText: "Our Formula",
+  buttonLink: "#", */
   imageUrl: "/Services/EIFS.png",
   imageAlt: "eifs treatment"
 };
 
-/* SERVICES */
-export const verticalSliderDataP1 = [
+/* vertical SERVICES */
+export const verticalSliderServicesPageData1 = [
   {
     icon: "/services/luxury-home-2.jpg",
     title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
@@ -649,3 +712,5 @@ export const verticalSliderDataP1 = [
   
   
 ];
+
+/* ----------------------------------- */
