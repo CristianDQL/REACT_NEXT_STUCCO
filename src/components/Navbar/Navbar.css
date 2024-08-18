@@ -145,7 +145,7 @@
 
 /*Botón de Contact Us */
 .fund-button{
-    color: rgb(0, 0, 0);/* var(--dark-bg); */
+    color: rgb(255, 255, 255);/* var(--dark-bg); */
     background-color:  #E62200; /* var(--third-color); */
     padding: 0.6rem 0.5rem;
     margin: 0;
@@ -293,7 +293,7 @@
         box-sizing: border-box;
         padding: 1rem 0rem;
         border-radius: 999px;
-        color : rgb(0, 0, 0);/* var(--dark-bg); */
+        color : rgb(255, 255, 255);/* var(--dark-bg); */
         margin-top: 1rem;
 
         transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
@@ -409,7 +409,7 @@
         box-sizing: border-box;
         padding: 1rem 0rem;
         border-radius: 999px;
-        color : rgb(0, 0, 0);/* var(--dark-bg); */
+        color : rgb(255, 255, 255);/* var(--dark-bg); */
 
         transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
     }      
