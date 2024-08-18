@@ -16,26 +16,3 @@
     display: none; /* Oculta el slider vertical por defecto en pantallas grandes */
 }
 
-
-/* Media Queries para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    .servP-split-container {
-        display: flex;
-        flex-direction: column-reverse; /* Coloca la imagen encima del texto */
-        align-items: stretch;
-    }
-
-    .servP-vertical-container {
-        display: none; /* Asegura que el vertical slider sigue oculto */
-    }
-
-    .scl-textSection {
-        max-width: 100%; /* Ajusta el ancho máximo al 100% */
-        margin: 1rem;
-    }
-
-    .scl-imageSection {
-        max-width: 100%; /* Ajusta el ancho máximo al 100% */
-        margin: 1rem 0; /* Ajusta los márgenes */
-    }
-}
