@@ -1,0 +1,77 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 0 10px; /* Añadir algo de padding para evitar que el contenido toque los bordes */
+}
+
+.form {
+    max-width: 600px;
+    width: 100%; /* Aseguramos que el formulario use todo el ancho disponible hasta 600px */
+    background: #ffe8e8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: auto;
+    box-sizing: border-box; /* Asegura que el padding y el border formen parte del ancho y altura total */
+}
+
+.form h2 {
+    font-size: 24px; /* Tamaño reducido para mejor visualización en dispositivos más pequeños */
+    margin-bottom: 20px; /* Espacio después del título */
+}
+
+.input-box {
+    width: 100%; /* Asegurar que los input-box usen todo el ancho disponible */
+    margin-top: 15px; /* Espaciado uniforme */
+    
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666; /* Color más suave para las etiquetas */
+}
+
+.field {
+    width: calc(100% - 30px); /* Ajustar el ancho para contar el padding */
+    height: 45px;
+    background: transparent;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.field.mess {
+    height: 150px; /* Ajuste de altura para la textarea */
+}
+
+.field:focus, .field.mess:focus {
+    border-color: #a7a7a7; /* Cambia a un color que prefieras */
+    outline: none; /* Opcional: elimina el contorno predeterminado para limpiar la presentación visual */
+}
+
+
+form button {
+    width: 100%;
+    height: 50px;
+    background: #E62200;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.3s; /* Animación más rápida y solo en el color de fondo */
+}
+
+form button:hover {
+    background: #650100; /* Un tono más oscuro para el hover */
+}

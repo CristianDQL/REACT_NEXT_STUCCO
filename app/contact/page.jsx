@@ -1,9 +1,10 @@
+import ContactPage from '@/src/components/ContactPage/ContactPage'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      contact Us: coger un --example de formluario de contacto de next.
+      <ContactPage/>
     </div>
   )
 }
