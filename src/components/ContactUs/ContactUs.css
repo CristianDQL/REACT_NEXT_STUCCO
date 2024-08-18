@@ -177,6 +177,11 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
+
+    .cu-wrapper {
+        padding-top: 1rem;
+        
+    }
     .cu-container {
         padding: 0 1.5rem;
     }
