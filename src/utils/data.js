@@ -596,29 +596,28 @@ export const titleServicesPageData = {
 /* SERVICES-PAGE */
 /* Datos para los Splits del Home, cada json será una aprte diferente. Crear uno por cada sección */
 export const splitScreenServicesPageData1 = {
-  title: "EXPLORING STUCCO: THE ART OF LUXURY SURFACES",
+  title: "UNDERSTANDING STUCCO: THE OPTIMUM BUILDING MATERIAL",
   paragraphs: [
-    "Discover the elegance and versatility of stucco. A preferred choice for discerning architects and homeowners, stucco offers a timeless appeal and unmatched durability tailored to the Florida climate.",
+    "Stucco is a versatile building material made from cement, sand, and lime, applied in several layers over a lathe base. This combination creates a solid, durable veneer that can be textured or smooth, offering a range of aesthetic finishes.",
     /* "We work closely with property owners and architects to deliver expert plastering, drywall, and insulation services, ensuring top-quality craftsmanship in every project." */
-    "Stucco not only enhances the visual appeal of your property but also provides a robust barrier against weather and time, making it ideal for both contemporary and classic designs."
+    "Chosen for its impressive durability and aesthetic flexibility, stucco is ideal for Florida's climate, providing excellent resistance to impact, fire, and moisture. Beyond its practical benefits, stucco also offers endless design possibilities, making it a top choice for enhancing both traditional and contemporary architecture."
   ],
   /* buttonText: "Our Journey",
   buttonLink: "#", */
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"
 };
-export const splitScreenServicesPageData2 = {
+/* export const splitScreenServicesPageData2 = {
   title: "UNDERSTANDING STUCCO: THE OPTIMUM BUILDING MATERIAL",
   paragraphs: [
     "Stucco is a versatile building material made from cement, sand, and lime, applied in several layers over a lathe base. This combination creates a solid, durable veneer that can be textured or smooth, offering a range of aesthetic finishes.",
     "Chosen for its impressive durability and aesthetic flexibility, stucco is ideal for Florida's climate, providing excellent resistance to impact, fire, and moisture. Beyond its practical benefits, stucco also offers endless design possibilities, making it a top choice for enhancing both traditional and contemporary architecture."
     
   ],
-  /* buttonText: "Our Technique",
-  buttonLink: "#", */
+  
   imageUrl: "/services/luxury-home.jpg",
   imageAlt: "Luxury Home Interior"
-};
+}; */
 export const splitScreenServicesPageData3 = {
   title: "TRADITIONAL STUCCO: TIME-HONORED TECHNIQUES",
   paragraphs: [
