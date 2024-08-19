@@ -157,11 +157,10 @@
     border-radius: 13px;
 
     /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
-    transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition: background-color 0.3s, color 0.3s;
 }
 .fund-button:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Sombra más pronunciada */
-    transform: translateY(-2px); /* Eleva el botón */
+    
 
     background-color: #650100 ; /* Un tono más claro o diferente */
     color: #ffffff; /* Mantén el color del texto o cámbialo si necesario */
@@ -202,7 +201,10 @@
     color: red; /* Cambia solo el color del texto a rojo para el enlace activo */
     
 }
-
+/* Asegurarse de que el texto del enlace no tenga subrayado */
+.link-style, .link-fund-button  {
+    text-decoration: none; /* Elimina el subrayado */
+}
 
 
 
@@ -284,7 +286,10 @@
         color:#E62200; /* Cambia el color del texto en hover */
     }
 
-    .m-funded-button{
+    .nm-menu .link-fund-button {
+        border-bottom: none; /* Esto eliminará la línea debajo del botón 'Contact Us' */
+    }
+    .link-fund-button{
         width: 100%;
         background-color: #E62200; /* var(--third-color); */
         display: flex;
@@ -295,15 +300,37 @@
         border-radius: 999px;
         color : rgb(255, 255, 255);/* var(--dark-bg); */
         margin-top: 1rem;
+        text-transform: capitalize;
 
         transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
     }      
-    .m-funded-button:hover {
+    .link-fund-button:hover {
         box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Sombra más pronunciada */
         transform: translateY(-2px); /* Eleva el botón */
     
         background-color: #650100 ; /* Un tono más claro o diferente */
         color: #ffffff; /* Mantén el color del texto o cámbialo si necesario */
+    }
+    /* Si no añado esto no se aplicaba el efecto al Link... */
+    .nm-menu .link-fund-button, .n-menu .link-fund-button {
+        all: unset; /* Resetea otros estilos para evitar interferencias */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        background-color: #E62200;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .nm-menu .link-fund-button:hover {
+        
+        background-color: #650100;
+        color: white;
+        
     }
 
     
@@ -379,7 +406,10 @@
         cursor: pointer;
 
         align-items: center; /* Centra los elementos del menú verticalmente */
+        
     }
+
+    
 
     /*Span del menú hamburguesa, divisiones entre submenús - CAMBIARRRRRRRRRR----*/
     .nm-menu a{
@@ -400,7 +430,17 @@
         color:#E62200; /* Cambia el color del texto en hover */
     }
 
-    .m-funded-button{
+    .link-fund-button {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Asegura que el botón ocupe el ancho total */
+        align-items: center;
+
+        
+        
+    }
+
+    .link-fund-button{
         width: 20%;
         background-color: #E62200; /* var(--third-color); */
         display: flex;
@@ -413,13 +453,36 @@
 
         transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
     }      
-    .m-funded-button:hover {
+    .link-fund-button:hover {
         box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Sombra más pronunciada */
         transform: translateY(-2px); /* Eleva el botón */
     
         background-color: #650100 ; /* Un tono más claro o diferente */
         color: #ffffff; /* Mantén el color del texto o cámbialo si necesario */
     }
+    .nm-menu .link-fund-button, .n-menu .link-fund-button {
+        all: unset; /* Resetea otros estilos para evitar interferencias */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        background-color: #E62200;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .nm-menu .link-fund-button:hover {
+        
+        background-color: #650100;
+        color: white;
+        
+    }
+    
+
+    
 
     
     .nm-container img {

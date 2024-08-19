@@ -97,7 +97,10 @@ const Navbar = () => {
                         ))}
                         
                     </div>
-                    <div className="fund-button">CONTACT US</div>
+                    <Link href="/contact" className='link-fund-button'>
+                         <div className="fund-button">CONTACT US</div>
+                    </Link>
+                    
                 </div>
 
                 
@@ -148,7 +151,17 @@ const Navbar = () => {
                             
                         </Link>
                     ))}
-                <div className="m-funded-button">Contact Us</div>
+
+                
+                
+                    <div className="m-funded-button">
+                        <Link href="/contact" className='link-fund-button'>
+                            CONTACT US
+                        </Link>
+                        
+                    </div>
+                
+                
 
 
 
