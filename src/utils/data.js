@@ -207,7 +207,7 @@ export const splitScreenData1 = {
     "Stucco is not just a technique; it’s an art. At Optimum Stucco, we treat each project as a unique canvas, aiming for seamless finishes that elevate property aesthetics and value, whether it’s new construction or renovation."
   ],
   buttonText: "Our Journey",
-  buttonLink: "#",
+  buttonHref: "/services#serviceP2",
   imageUrl: "/services/luxury-home-2.jpg",
   imageAlt: "Luxury Home Interior"
 };
@@ -220,7 +220,7 @@ export const splitScreenData2 = {
     
   ],
   buttonText: "Our Process",
-  buttonLink: "#",
+  buttonHref: "/services",
   imageUrl: "/Services/2.jpg",
   imageAlt: "Luxury Home Interior"
 };
@@ -232,7 +232,7 @@ export const splitScreenData3 = {
     
   ],
   buttonText: "Our Technique",
-  buttonLink: "#",
+  buttonHref: "/services#serviceP5",
   imageUrl: "/services/luxury-home.jpg",
   imageAlt: "Luxury Home Interior"
 };
@@ -244,7 +244,7 @@ export const splitScreenData4 = {
     
   ],
   buttonText: "Our Formula",
-  buttonLink: "#",
+  buttonHref: "/services#serviceP6",
   imageUrl: "/Services/EIFS.png",
   imageAlt: "eifs treatment"
 };

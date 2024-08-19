@@ -3,10 +3,11 @@ import './SplitScreenR.css';
 import Image from 'next/image';
 
 import  { useEffect, useRef } from 'react';
+import Button from '../Button/Button';
 
 
 
-const SplitScreenR = ({ data, showButton = true }) => {
+const SplitScreenR = ({ data, id, showButton = true }) => {
 
   /* Efecto Image */
   const imageRef = useRef(null);
@@ -44,7 +45,7 @@ const SplitScreenR = ({ data, showButton = true }) => {
 
 
   return (
-    <div className="scr-wrapper">
+    <div className="scr-wrapper" id={id}>
       <div className="container">
         <div className="scr-container">
 
@@ -70,14 +71,10 @@ const SplitScreenR = ({ data, showButton = true }) => {
                 ))}
 
 
-                {/* Condición para mostrar u ocultar el botón */}
-                {showButton && (
-                    <div className="scr-button-container">
-                      <button className="scr-button">
-                        {data.buttonText}<span className="arrow-icon">{">>"}</span>
-                      </button>
-                    </div>
-                )}
+                {/* botón */}
+                <Button href={data.buttonHref} show={showButton}>
+                  {data.buttonText}
+                </Button>
 
 
               </div>

@@ -1,0 +1,48 @@
+.buttonComponent-container {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+  
+.buttonComponent {
+    background-color: #E62200;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Added shadow */ 
+}
+  
+.buttonComponent:hover {
+    /* box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-2px); */
+    background-color: #650100;
+    color: #ffffff;
+}
+.arrow-icon {
+    margin-left: 0.5rem;
+    animation: slide 1s infinite;
+}
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.buttonComponent,
+.buttonComponent:link,   /* Estado sin visitar */
+.buttonComponent:visited, /* Estado visitado */
+.buttonComponent:hover,   /* Al pasar el mouse */
+.buttonComponent:active { /* Al hacer clic */
+    text-decoration: none; /* Elimina el subrayado */
+    
+}

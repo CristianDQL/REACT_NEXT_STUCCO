@@ -24,13 +24,13 @@ const ServicesPage = () => {
 
 
           <div className="servP-split-container">
-            <SplitScreenPageL data={splitScreenServicesPageData1} showButton={false}/>
+            <SplitScreenPageL data={splitScreenServicesPageData1} id="serviceP1" showButton={false}/>
             {/* <SplitScreenPageR data={splitScreenServicesPageData2} showButton={false}/> */}
-            <SplitScreenPageR data={splitScreenServicesPageData3} showButton={false}/>
-            <SplitScreenPageL data={splitScreenServicesPageData4} showButton={false}/>
-            <SplitScreenPageR data={splitScreenServicesPageData5} showButton={false}/>
-            <SplitScreenPageL data={splitScreenServicesPageData6} showButton={false}/>
-            <SplitScreenPageR data={splitScreenServicesPageData7} showButton={false}/>
+            <SplitScreenPageR data={splitScreenServicesPageData3} id="serviceP2" showButton={false}/>
+            <SplitScreenPageL data={splitScreenServicesPageData4} id="serviceP3" showButton={false}/>
+            <SplitScreenPageR data={splitScreenServicesPageData5} id="serviceP4" showButton={false}/>
+            <SplitScreenPageL data={splitScreenServicesPageData6} id="serviceP5" showButton={false}/>
+            <SplitScreenPageR data={splitScreenServicesPageData7} id="serviceP6" showButton={false}/>
           </div>
 
           

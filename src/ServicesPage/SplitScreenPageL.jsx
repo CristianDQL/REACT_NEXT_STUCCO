@@ -6,7 +6,7 @@ import  { useEffect, useRef } from 'react';
 
 
 
-const SplitScreenL = ({ data, showButton = true }) => {
+const SplitScreenL = ({ data, id, showButton = true }) => {
 
 
   /* Efecto Image */
@@ -43,7 +43,7 @@ const SplitScreenL = ({ data, showButton = true }) => {
 
 
   return (
-    <div className="scpl-wrapper">
+    <div className="scpl-wrapper" id={id}>
       <div className="container">
         <div className="scpl-container">
 

@@ -129,12 +129,11 @@
     align-items: center;
     transition: background-color 0.5s ease;
 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6); /* Added shadow */
+    
 }
   
 .port-button:hover {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transform: translateY(-2px);
+    
     background-color: #650100;
     color: #ffffff;
 }
