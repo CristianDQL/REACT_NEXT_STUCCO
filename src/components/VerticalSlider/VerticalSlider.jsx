@@ -3,6 +3,7 @@ import './VerticalSlider.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { containerVariants } from '@/src/utils/animation'
+import Link from 'next/link'
 
 const VerticalSlider = ({ features }) => {
   return (
@@ -24,9 +25,13 @@ const VerticalSlider = ({ features }) => {
                             initial="offscreen"
                             whileInView="onscreen"
                             whileHover={{ scale: 1.05 }} /* Adding motion hover effect */
-                        >
-                            <Image src={feature.icon} alt={feature.title} width={250} height={250} />
+                        >   
+                            <Link href={feature.href} passHref>
+                                <Image src={feature.icon} alt={feature.title} width={250} height={250} />
+                                
+                            </Link>
                             <span>{feature.title}</span>
+                            
                             {/* <span>{feature.des}</span> */}
                             
                         </motion.div>

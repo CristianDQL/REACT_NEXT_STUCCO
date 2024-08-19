@@ -257,21 +257,25 @@ export const verticalSliderData1 = [
     icon: "/services/luxury-home-2.jpg",
     title: "OPTIMUM STUCCO CONTRACTORS IN MIAMI",
     des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
+    href: "/services#serviceP2",
   },
   {
     icon: "/Services/2.jpg",
     title: "COMMERCIAL STUCCO EXCELLENCE",
     des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
+    href: "/services",
   },
   {
     icon: "/services/luxury-home.jpg",
     title: "RESIDENTIAL STUCCO EXPERTISE",
     des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+    href: "/services#serviceP5",
   },
   {
     icon: "/Services/EIFS.png",
     title: "COMPREHENSIVE STUCCO SERVICES",
     des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
+    href: "/services#serviceP6",
   },
   
   
