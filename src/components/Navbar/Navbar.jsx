@@ -36,6 +36,11 @@ const Navbar = () => {
     {/*State Hook - funcionalidad para abrir el menú hamburguesa con clicl*/}
     const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
 
+    /* Función para manejar el cierre del menú, ya que con el botón en mobile no funciona */
+    const closeMenu = () => {
+        setMobileMenuOpened(false);
+    };
+
     /* Sticky menu */
     const [navStyle, setNavStyle] = useState("");
     const { scrollYProgress } = useScroll();
@@ -155,7 +160,7 @@ const Navbar = () => {
                 
                 
                     <div className="m-funded-button">
-                        <Link href="/contact" className='link-fund-button'>
+                        <Link href="/contact" onClick={closeMenu} className='link-fund-button'>
                             CONTACT US
                         </Link>
                         

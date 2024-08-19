@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 1rem;
-    margin: 2rem 2rem 0rem 2rem;
+    margin: 0.1rem 2rem 0rem 2rem;
 
 }
 
